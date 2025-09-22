@@ -179,13 +179,17 @@ function CollaboratorCard({ c }: { c: Collaborator }) {
 export default function PeoplePage() {
   return (
     <div className="space-y-10 p-4">
-      <section>
-        <h2 className="mb-4 text-2xl font-semibold text-black">Lab Director</h2>
+      {/* <section>
+        <h2 className="mb-4 text-2xl font-semibold text-black">
+          Current Members
+        </h2>
         <DirectorCard person={DIRECTOR} />
-      </section>
+      </section> */}
 
       <section>
-        <h2 className="mb-4 text-2xl font-semibold text-black">Students</h2>
+        <h2 className="mb-4 text-2xl font-semibold text-black">
+          Current Members
+        </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
           {STUDENTS.map((p) => (
             <PersonCard key={p.name} person={p} showFocus={true} />

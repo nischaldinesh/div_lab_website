@@ -34,12 +34,27 @@ export const DIRECTOR: Person = {
     },
     { type: "mail", href: "mailto:quadri@ou.edu" },
   ],
-  focus: ["Information Visualization", "HCI", "Design Optimization"],
+  focus: ["InfoVis", "HCI", "Perception"],
 };
 
 // -------------------- STUDENTS --------------------
 
 export const STUDENTS: Person[] = [
+  {
+    name: "Ghulam Jilani Quadri",
+    role: "Lab Director & Faculty",
+    subtitle: "Assistant Professor, OU",
+    img: "/lab_crew/faculty.jpg",
+    socials: [
+      { type: "web", href: "http://jiquadcs.com/index.html" },
+      {
+        type: "scholar",
+        href: "https://scholar.google.com/citations?hl=en&tzom=300&user=jw9QYJcAAAAJ",
+      },
+      { type: "mail", href: "mailto:quadri@ou.edu" },
+    ],
+    focus: ["InfoVis", "HCI", "Perception"],
+  },
   {
     name: "Tapendra Pandey",
     role: "Ph.D. Student",
@@ -51,8 +66,8 @@ export const STUDENTS: Person[] = [
       { type: "mail", href: "mailto:pandey@ou.edu" },
     ],
     focus: [
-      "High Level Visualization Comprehension",
-      "Perception and Cognition Science",
+      "Visualization Comprehension",
+      "Perception & Cognition Science",
       "Human Centered AI",
     ],
   },
@@ -65,11 +80,7 @@ export const STUDENTS: Person[] = [
       { type: "web", href: "http://www.namhuynh1308.github.io/" },
       { type: "mail", href: "mailto:nam@ou.edu" },
     ],
-    focus: [
-      "Large Language Model",
-      "Human-Computer Interaction",
-      "Visualization",
-    ],
+    focus: ["LLM", "HCI", "Visualization"],
   },
   {
     name: "Debra Hogue",
@@ -83,11 +94,7 @@ export const STUDENTS: Person[] = [
       },
       { type: "mail", href: "mailto:dhogue@ou.edu" },
     ],
-    focus: [
-      "Computer Vision (Camouflaged Object Detection)",
-      "Human AI Collaboration",
-      "Visualizations",
-    ],
+    focus: ["Human AI Collaboration", "Visualizations", "Computer Vision"],
   },
   {
     name: "Braden Roper",
@@ -102,7 +109,7 @@ export const STUDENTS: Person[] = [
       "Animated Visualization Techniques",
       "Dimensionality Reduction",
       "Education",
-      "Human-Computer Interaction",
+      "HCI",
     ],
   },
   {
@@ -111,11 +118,7 @@ export const STUDENTS: Person[] = [
     subtitle: "Computer Science, OU",
     img: "/lab_crew/Shane_Elliott.jpg",
     socials: [{ type: "mail", href: "mailto:David.S.Elliott-1@ou.edu" }],
-    focus: [
-      "Computer Vision (Deepfake Detection and Interpretability)",
-      "Human AI Collaboration",
-      "Visual Analytics",
-    ],
+    focus: ["Human AI Collaboration", "Visual Analytics", "Computer Vision"],
   },
   {
     name: "Nischal Dinesh",
@@ -127,7 +130,7 @@ export const STUDENTS: Person[] = [
       { type: "web", href: "https://nischaldinesh.com/" },
       { type: "mail", href: "mailto:nischal.dinesh-1@ou.edu" },
     ],
-    focus: ["Outlier detection", "AI/ML Visualization"],
+    focus: ["AI/ML in Visualization", "Design Framework"],
   },
   {
     name: "Dhanushwi Arava",
@@ -141,7 +144,7 @@ export const STUDENTS: Person[] = [
       },
       { type: "mail", href: "mailto:arava.dhanushwi-1@ou.edu" },
     ],
-    focus: ["Outlier detection", "AI/ML Visualization"],
+    focus: ["AI/ML in Visualization", "HCI"],
   },
   {
     name: "Jasmine T. Lim",
@@ -152,11 +155,7 @@ export const STUDENTS: Person[] = [
       { type: "linkedin", href: "https://www.linkedin.com/in/jasminelim0" },
       { type: "mail", href: "mailto:jasmine.t.lim@ou.edu" },
     ],
-    focus: [
-      "Data visualization",
-      "user perception",
-      "Human-Centered Computing",
-    ],
+    focus: ["InfoVis", "Perception", "HCI"],
   },
   {
     name: "Matthew Tran",
@@ -170,11 +169,7 @@ export const STUDENTS: Person[] = [
       },
       { type: "mail", href: "mailto:matthew.h.tran-1@ou.edu" },
     ],
-    focus: [
-      "High Level Visualization Comprehension",
-      "Perception and Cognition Science",
-      "Human-Centered Computing",
-    ],
+    focus: ["InfoVis", "Perception and Cognition Science", "HCI"],
   },
   {
     name: "Cale Bible",
@@ -182,7 +177,7 @@ export const STUDENTS: Person[] = [
     subtitle: "Computer Science, OU",
     img: "/lab_crew/Cale_headshot.jpg",
     socials: [{ type: "mail", href: "mailto:cbible@ou.edu" }],
-    focus: ["Visualization"],
+    focus: ["Visualization", "HCI", "Intelligence Systems"],
   },
 ];
 
