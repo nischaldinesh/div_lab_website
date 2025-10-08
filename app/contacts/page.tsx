@@ -1,6 +1,6 @@
 export default function ContactsPage() {
   return (
-    <section className="w-full p-4">
+    <section className="w-full p-8">
       <h1 className="mb-6 text-2xl font-semibold">Contact Us</h1>
 
       <div className="flex w-full flex-wrap gap-6">

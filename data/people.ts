@@ -55,33 +55,19 @@ export const STUDENTS: Person[] = [
     ],
     focus: ["InfoVis", "HCI", "Perception"],
   },
+
   {
-    name: "Tapendra Pandey",
+    name: "Shane Elliott",
     role: "Ph.D. Student",
     subtitle: "Computer Science, OU",
-    img: "/lab_crew/Student_1.jpg",
+    img: "/lab_crew/Shane_Elliott.jpg",
     socials: [
-      { type: "linkedin", href: "https://www.linkedin.com/in/ptapendra/" },
-      { type: "web", href: "https://ptapendra.github.io/" },
-      { type: "mail", href: "mailto:pandey@ou.edu" },
+      { type: "mail", href: "mailto:David.S.Elliott-1@ou.edu" },
+      { type: "linkedin", href: "https://www.linkedin.com/in/dse418/" },
     ],
-    focus: [
-      "Visualization Comprehension",
-      "Perception & Cognition Science",
-      "Human Centered AI",
-    ],
+    focus: ["Human AI Collaboration", "Visual Analytics", "Computer Vision"],
   },
-  {
-    name: "Nam Huynh",
-    role: "Ph.D. Student",
-    subtitle: "Computer Science, OU",
-    img: "/lab_crew/student_4.jpeg",
-    socials: [
-      { type: "web", href: "http://www.namhuynh1308.github.io/" },
-      { type: "mail", href: "mailto:nam@ou.edu" },
-    ],
-    focus: ["LLM", "HCI", "Visualization"],
-  },
+
   {
     name: "Debra Hogue",
     role: "Ph.D. Student",
@@ -113,12 +99,32 @@ export const STUDENTS: Person[] = [
     ],
   },
   {
-    name: "Shane Elliott",
+    name: "Tapendra Pandey",
     role: "Ph.D. Student",
     subtitle: "Computer Science, OU",
-    img: "/lab_crew/Shane_Elliott.jpg",
-    socials: [{ type: "mail", href: "mailto:David.S.Elliott-1@ou.edu" }],
-    focus: ["Human AI Collaboration", "Visual Analytics", "Computer Vision"],
+    img: "/lab_crew/Student_1.jpg",
+    socials: [
+      { type: "linkedin", href: "https://www.linkedin.com/in/ptapendra/" },
+      { type: "web", href: "https://ptapendra.github.io/" },
+      { type: "mail", href: "mailto:pandey@ou.edu" },
+    ],
+    focus: [
+      "Visualization Comprehension",
+      "Perception & Cognition Science",
+      "Human Centered AI",
+    ],
+  },
+
+  {
+    name: "Nam Huynh",
+    role: "Ph.D. Student",
+    subtitle: "Computer Science, OU",
+    img: "/lab_crew/student_4.jpeg",
+    socials: [
+      { type: "web", href: "http://www.namhuynh1308.github.io/" },
+      { type: "mail", href: "mailto:nam@ou.edu" },
+    ],
+    focus: ["LLM", "HCI", "Visualization"],
   },
   {
     name: "Nischal Dinesh",
@@ -223,7 +229,7 @@ export const COLLABORATORS: Collaborator[] = [
   },
   {
     name: "Human-AI Interaction and Visualization Lab",
-    org: "Ulsan National Institute of Science & Technology",
+    org: "Pohang University of Science and Technology",
     img: "/lab_crew/unist.png",
     href: "https://sites.google.com/view/haiv/",
   },

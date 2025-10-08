@@ -1,6 +1,6 @@
 export default function LabIntro() {
   return (
-    <section className="mt-12 rounded-lg bg-neutral-100 p-6">
+    <section className="mt-2 rounded-lg bg-neutral-100 p-6">
       <p className="text-justify">
         The <strong>Data Interaction and Visualization Lab</strong>, in short{" "}
         <strong>DIV-Lab</strong> is an interdisciplinary research laboratory
@@ -26,7 +26,7 @@ export default function LabIntro() {
 
       <ul className="mt-2 list-none space-y-6">
         <li>
-          <h3 className="text-lg font-semibold text-blue-500">
+          <h3 className="text-lg font-semibold text-[#841617]">
             Constructing Optimal Visualization Design
           </h3>
           <p className="mt-1 text-justify">
@@ -49,7 +49,7 @@ export default function LabIntro() {
         </li>
 
         <li>
-          <h3 className="text-lg font-semibold text-blue-500">
+          <h3 className="text-lg font-semibold text-[#841617]">
             Perception, Cognition and Visualization
           </h3>
           <p className="mt-1 text-justify">
@@ -71,7 +71,7 @@ export default function LabIntro() {
         </li>
 
         <li>
-          <h3 className="text-lg font-semibold text-blue-500">
+          <h3 className="text-lg font-semibold text-[#841617]">
             Human Centered Computing and Interfaces
           </h3>
           <p className="mt-1 text-justify">

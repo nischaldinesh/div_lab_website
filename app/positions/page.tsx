@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function PositionsPage() {
   return (
-    <section className="w-full p-4">
+    <section className="w-full p-8">
       <h1 className="mb-6 text-2xl font-semibold">Open Positions</h1>
 
       <p className="mb-8  text-neutral-800">

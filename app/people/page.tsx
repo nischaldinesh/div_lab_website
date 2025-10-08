@@ -151,13 +151,8 @@ function DirectorCard({ person }: { person: Person }) {
 function CollaboratorCard({ c }: { c: Collaborator }) {
   return (
     <div className="flex items-center gap-4 rounded-lg bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-1 hover:shadow-md">
-      <div className="relative h-16 w-16 overflow-hidden rounded-full bg-neutral-200">
-        <Image
-          src={c.img}
-          alt={`${c.name} Logo`}
-          fill
-          className="object-cover"
-        />
+      <div className="relative h-16 w-16 overflow-hidden">
+        <Image src={c.img} alt={`${c.name} Logo`} fill className="object-fit" />
       </div>
       <div className="flex-1">
         <h3 className="text-base font-semibold text-black">
@@ -178,7 +173,7 @@ function CollaboratorCard({ c }: { c: Collaborator }) {
 
 export default function PeoplePage() {
   return (
-    <div className="space-y-10 p-4">
+    <div className="space-y-10 p-8">
       {/* <section>
         <h2 className="mb-4 text-2xl font-semibold text-black">
           Current Members

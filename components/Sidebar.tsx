@@ -86,8 +86,8 @@ export default function Sidebar() {
       <aside
         id="lab-sidebar"
         className={[
-          "fixed left-0 top-0 z-[1200] flex h-screen w-[200px] flex-col border-r border-neutral-200 bg-white px-4 py-6 transition-transform",
-          "md:translate-x-0 md:w-[200px]",
+          "fixed left-0 top-0 z-[1200] flex h-screen w-[220px] flex-col border-r border-neutral-200 bg-white px-2 py-2 transition-transform",
+          "md:translate-x-0 md:w-[220px]",
           open ? "translate-x-0" : "-translate-x-full md:translate-x-0",
           "max-md:w-[70%] max-md:max-w-[300px]",
         ].join(" ")}
@@ -130,9 +130,9 @@ export default function Sidebar() {
                   href={item.href}
                   onClick={() => setOpen(false)}
                   className={[
-                    "block rounded-md px-3 py-2 text-sm transition",
+                    "block rounded-md px-3 py-2 text-lg transition",
                     isActive(item.href)
-                      ? "border-l-4 border-blue-500 bg-neutral-200 font-medium text-neutral-900"
+                      ? "border-l-4 border-[#841617] bg-neutral-200 font-bold text-neutral-900"
                       : "text-neutral-700 hover:bg-neutral-100",
                   ].join(" ")}
                 >

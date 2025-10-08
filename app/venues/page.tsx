@@ -65,7 +65,7 @@ function VenueRow({ v }: { v: VenueLite }) {
 
   return (
     <tr className="border-b">
-      <td className="px-4 py-3 text-sm font-medium text-blue-600">
+      <td className="px-4 py-3 text-sm font-medium text-[#841617]">
         <a href={v.url} target="_blank" rel="noopener noreferrer">
           {v.name}
         </a>
@@ -92,14 +92,14 @@ function VenueRow({ v }: { v: VenueLite }) {
 
 export default function VenuesPage() {
   return (
-    <div className="w-full p-4">
+    <div className="w-full p-8">
       <h1 className="mb-6 text-2xl font-bold">
         Venue Submissions Deadlines ⏱️
       </h1>
 
       {VENUE_GROUPS.map((group) => (
         <section key={group.category} className="mb-12">
-          <h2 className="mb-4 text-lg font-semibold text-blue-600">
+          <h2 className="mb-4 text-lg font-semibold text-[#841617]">
             {group.category}
           </h2>
           <div className="overflow-x-auto">

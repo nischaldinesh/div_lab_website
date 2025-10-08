@@ -7,6 +7,13 @@ export type NewsRecord = {
 
 export const newsData: NewsRecord[] = [
   {
+    date: "09 - 2025",
+    content:
+      'One Paper - "Distortion-aware Brushing for Reliable Cluster Analysis in Multidimensional Projections" accepted at IEEE TVCG 2025.',
+    link: "https://arxiv.org/abs/2201.06379",
+    conferenceLink: "https://www.computer.org/csdl/journal/tg",
+  },
+  {
     date: "07 - 2025",
     content:
       'One Paper - "Characterizing Visualization Perception with Psychological Phenomena: Uncovering the Role of Subitizing in Data Visualization" accepted at IEEE VIS 2025.',
