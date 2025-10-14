@@ -1,7 +1,7 @@
 export default function LabIntro() {
   return (
     <section className="mt-2 rounded-lg bg-neutral-100 p-6">
-      <p className="text-justify">
+      <p className="text-justify text-sm">
         The <strong>Data Interaction and Visualization Lab</strong>, in short{" "}
         <strong>DIV-Lab</strong> is an interdisciplinary research laboratory
         located in the School of Computer Science at the University of Oklahoma,
@@ -29,7 +29,7 @@ export default function LabIntro() {
           <h3 className="text-lg font-semibold text-[#841617]">
             Constructing Optimal Visualization Design
           </h3>
-          <p className="mt-1 text-justify">
+          <p className="mt-1 text-justify text-sm">
             At DIV-Lab, our research on constructing optimal{" "}
             <strong>visualization design</strong> focuses on developing{" "}
             <strong>visualization frameworks</strong> that align visual
@@ -52,7 +52,7 @@ export default function LabIntro() {
           <h3 className="text-lg font-semibold text-[#841617]">
             Perception, Cognition and Visualization
           </h3>
-          <p className="mt-1 text-justify">
+          <p className="mt-1 text-justify text-sm">
             At DIV-Lab, our research focuses on the intersection of{" "}
             <strong>perception</strong>, <strong>cognition</strong>, and{" "}
             <strong>data visualization</strong>. We explore how people visually
@@ -74,7 +74,7 @@ export default function LabIntro() {
           <h3 className="text-lg font-semibold text-[#841617]">
             Human Centered Computing and Interfaces
           </h3>
-          <p className="mt-1 text-justify">
+          <p className="mt-1 text-justify text-sm">
             At DIV-Lab, our Human-Centered Computing and Interfaces research
             focuses on enabling effective <strong>collaboration</strong> between
             people and intelligent systems. We design{" "}
