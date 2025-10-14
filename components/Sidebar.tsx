@@ -115,8 +115,8 @@ export default function Sidebar() {
               src="/images/logo.png"
               alt="DivLab Logo"
               width={140}
-              height={70}
-              className="mx-auto h-auto w-auto"
+              height={140}
+              className="mx-auto h-auto w-auto mt-2"
               priority
             />
           </Link>

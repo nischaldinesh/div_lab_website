@@ -56,6 +56,25 @@ export const publicationsIntro = {
 
 export const publications: Publication[] = [
   {
+    slug: "visual-stenography",
+    year: 2025,
+    title:
+      "Visual Stenography: Feature Recreation and Preservation in Sketches of Noisy Line Charts",
+    authors:
+      "Rifat Ara Proma, Michael Correll, Ghulam Jilani Quadri, Paul Rosen",
+    venue: "IEEE TVCG",
+    links: [
+      {
+        label: "PDF",
+        href: "https://ieeevis.b-cdn.net/vis_2024/posters/v-vis-posters-1100.pdf",
+      },
+    ],
+    image: {
+      src: "/publications/discrepancies.png",
+      alt: "Visual Stenography Image",
+    },
+  },
+  {
     slug: "discrepancies-in-mental-workload",
     year: 2025,
     title:

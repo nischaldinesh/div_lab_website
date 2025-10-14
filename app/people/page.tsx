@@ -151,7 +151,7 @@ function DirectorCard({ person }: { person: Person }) {
 function CollaboratorCard({ c }: { c: Collaborator }) {
   return (
     <div className="flex items-center gap-4 rounded-lg bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-1 hover:shadow-md">
-      <div className="relative h-16 w-16 overflow-hidden">
+      <div className="relative h-25 w-33 overflow-hidden">
         <Image src={c.img} alt={`${c.name} Logo`} fill className="object-fit" />
       </div>
       <div className="flex-1">

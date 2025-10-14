@@ -55,19 +55,22 @@ export const STUDENTS: Person[] = [
     ],
     focus: ["InfoVis", "HCI", "Perception"],
   },
-
   {
-    name: "Shane Elliott",
+    name: "Tapendra Pandey",
     role: "Ph.D. Student",
     subtitle: "Computer Science, OU",
-    img: "/lab_crew/Shane_Elliott.jpg",
+    img: "/lab_crew/Student_1.jpg",
     socials: [
-      { type: "mail", href: "mailto:David.S.Elliott-1@ou.edu" },
-      { type: "linkedin", href: "https://www.linkedin.com/in/dse418/" },
+      { type: "linkedin", href: "https://www.linkedin.com/in/ptapendra/" },
+      { type: "web", href: "https://ptapendra.github.io/" },
+      { type: "mail", href: "mailto:pandey@ou.edu" },
     ],
-    focus: ["Human AI Collaboration", "Visual Analytics", "Computer Vision"],
+    focus: [
+      "Visualization Comprehension",
+      "Perception & Cognition Science",
+      "Human Centered AI",
+    ],
   },
-
   {
     name: "Debra Hogue",
     role: "Ph.D. Student",
@@ -82,6 +85,7 @@ export const STUDENTS: Person[] = [
     ],
     focus: ["Human AI Collaboration", "Visualizations", "Computer Vision"],
   },
+
   {
     name: "Braden Roper",
     role: "Ph.D. Student",
@@ -99,20 +103,15 @@ export const STUDENTS: Person[] = [
     ],
   },
   {
-    name: "Tapendra Pandey",
+    name: "Shane Elliott",
     role: "Ph.D. Student",
     subtitle: "Computer Science, OU",
-    img: "/lab_crew/Student_1.jpg",
+    img: "/lab_crew/Shane_Elliott.jpg",
     socials: [
-      { type: "linkedin", href: "https://www.linkedin.com/in/ptapendra/" },
-      { type: "web", href: "https://ptapendra.github.io/" },
-      { type: "mail", href: "mailto:pandey@ou.edu" },
+      { type: "mail", href: "mailto:David.S.Elliott-1@ou.edu" },
+      { type: "linkedin", href: "https://www.linkedin.com/in/dse418/" },
     ],
-    focus: [
-      "Visualization Comprehension",
-      "Perception & Cognition Science",
-      "Human Centered AI",
-    ],
+    focus: ["Human AI Collaboration", "Visual Analytics", "Computer Vision"],
   },
 
   {

@@ -22,18 +22,18 @@ export default function PublicationDetailPage({ params }: Props) {
   return (
     <main className="main-content mx-4 md:mx-8 my-6  px-5 md:px-10 py-8 shadow-sm">
       <section className="pub-detail">
-        <div className="pub-header mb-6">
-          <h1 className="text-2xl md:text-3xl font-bold text-justify">
+        <div className="w-full mb-5 max-w-6xl mx-auto text-center">
+          <h1 className="text-2xl md:text-3xl font-bold text-start">
             {pub.title}
           </h1>
-          <div className="pub-meta mt-3 text-neutral-700 text-justify">
-            <p className="authors">{pub.authors}</p>
-            <p className="venue">{pub.venue}</p>
+          <div className="pub-meta mt-3 text-neutral-700 space-y-1">
+            <p className="authors text-start">{pub.authors}</p>
+            <p className="venue text-start">{pub.venue}</p>
           </div>
         </div>
 
         <div className="pub-content flex flex-col items-center gap-8">
-          <div className="pub-image w-full flex justify-center">
+          <div className="w-full max-w-6xl mx-auto">
             <Image
               src={hero.src}
               alt={hero.alt}
@@ -45,8 +45,8 @@ export default function PublicationDetailPage({ params }: Props) {
           </div>
 
           {pub.detail?.abstract && (
-            <div className="pub-abstract w-full max-w-3xl">
-              <h2 className="text-xl font-semibold mb-2">Abstract</h2>
+            <div className="pub-abstract w-full max-w-6xl bg-gray-100 p-6 rounded-xl">
+              <h2 className="text-xl font-bold mb-2">Abstract</h2>
               <p className="leading-relaxed text-neutral-800 text-justify">
                 {pub.detail.abstract}
               </p>
@@ -54,7 +54,7 @@ export default function PublicationDetailPage({ params }: Props) {
           )}
 
           {pdfPrimary && (
-            <div className="pub-resources w-full max-w-3xl">
+            <div className="pub-resources w-full max-w-6xl">
               <h2 className="text-xl font-semibold mb-3">Resources</h2>
               <div className="flex flex-wrap gap-2">
                 <Link
@@ -76,7 +76,7 @@ export default function PublicationDetailPage({ params }: Props) {
           )}
 
           {pub.detail?.bibtex && (
-            <div className="bibtex-content w-full max-w-3xl">
+            <div className="bibtex-content w-full max-w-6xl">
               <h3 className="text-lg font-semibold mb-2">Citation</h3>
               <BibtexBox bibtex={pub.detail.bibtex} />
             </div>

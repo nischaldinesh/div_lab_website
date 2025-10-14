@@ -7,11 +7,21 @@ export type NewsRecord = {
 
 export const newsData: NewsRecord[] = [
   {
+    date: "10 - 2025",
+    content:
+      'One paper - "Visual Stenography: Feature Recreation and Preservation in Sketches of Noisy Line Charts" accepted at IEEE TVCG 2025',
+  },
+  {
     date: "09 - 2025",
     content:
       'One Paper - "Distortion-aware Brushing for Reliable Cluster Analysis in Multidimensional Projections" accepted at IEEE TVCG 2025.',
     link: "https://arxiv.org/abs/2201.06379",
     conferenceLink: "https://www.computer.org/csdl/journal/tg",
+  },
+  {
+    date: "09 - 2025",
+    content:
+      'One Paper - "Evaluating Line Chart Strategies for Mitigating Density of Temporal Data: The Impact on Trend, Prediction and Decision-Making" accepted at 20th International Symposium on Visual Computing 2025.',
   },
   {
     date: "07 - 2025",

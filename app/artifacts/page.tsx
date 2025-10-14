@@ -5,10 +5,9 @@ import { artifacts } from "@/data/artifacts";
 
 const ArtifactsPage = () => {
   return (
-    <main className="main-content mx-8 my-4 rounded-xl bg-neutral-100 px-10 py-10 shadow-sm border border-neutral-200">
+    <main className="main-content mx-8 my-4 rounded-xl bg-neutral-100 px-10 py-10 shadow-sm">
       <section className="artifacts-section">
-        {/* Legend */}
-        <div className="artifacts-legend flex flex-wrap gap-4 mb-6">
+        <div className="artifacts-legend flex flex-wrap gap-8 mb-6">
           {[
             { src: "/artifacts/data-collection.png", name: "Data" },
             { src: "/artifacts/demo.png", name: "Demo" },
@@ -22,8 +21,8 @@ const ArtifactsPage = () => {
               <Image
                 src={item.src}
                 alt={`${item.name} Icon`}
-                width={44}
-                height={44}
+                width={34}
+                height={34}
                 className="legend-icon"
               />
               <span className="legend-name text-sm font-medium text-gray-700">
@@ -32,18 +31,18 @@ const ArtifactsPage = () => {
             </div>
           ))}
         </div>
+        <hr className="h-px my-8 bg-gray-300 border-0"></hr>
 
-        {/* Artifact Grid */}
         <div className="artifacts-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {artifacts.map((artifact) => (
             <div
               key={artifact.title}
-              className="artifact-card border rounded-lg p-4 shadow-sm hover:shadow-md transition bg-white"
+              className="artifact-card rounded-lg p-4 shadow-sm hover:shadow-md transition bg-white"
             >
               <h3 className="artifact-title text-lg font-semibold mb-3">
                 {artifact.title}
               </h3>
-              <div className="artifact-resources flex gap-3 flex-wrap">
+              <div className="artifact-resources flex gap-8 flex-wrap">
                 {artifact.links.map((link, index) => (
                   <Link
                     key={index}
@@ -54,8 +53,8 @@ const ArtifactsPage = () => {
                     <Image
                       src={link.icon}
                       alt={link.alt}
-                      width={28}
-                      height={28}
+                      width={60}
+                      height={60}
                       className="resource-icon"
                     />
                   </Link>
