@@ -66,12 +66,49 @@ export const publications: Publication[] = [
     links: [
       {
         label: "PDF",
-        href: "https://ieeevis.b-cdn.net/vis_2024/posters/v-vis-posters-1100.pdf",
+        href: "https://arxiv.org/abs/2510.11927",
       },
     ],
     image: {
-      src: "/publications/discrepancies.png",
+      src: "/publications/visual_stenography.png",
       alt: "Visual Stenography Image",
+    },
+    detail: {
+      hero: {
+        src: "/publications/visual_stenography.png",
+        alt: "Visual Stenography Image",
+      },
+      pdf: "https://arxiv.org/abs/2510.11927",
+      abstract: `Line charts surface many features in time series
+data, from trends to periodicity to peaks and valleys. However,
+not every potentially important feature in the data may corre-
+spond to a visual feature which readers can detect or prioritize.
+In this study, we conducted a visual stenography task, where
+participants re-drew line charts to solicit information about the
+visual features they believed to be important. We systematically
+varied noise levels (SNR ≈5–30 dB) across line charts to observe
+how visual clutter influences which features people prioritize in
+their sketches. We identified three key strategies that correlated
+with the noise present in the stimuli: the Replicator attempted
+to retain all major features of the line chart including noise;
+the Trend Keeper prioritized trends disregarding periodicity and
+peaks; and the De-noiser filtered out noise while preserving other
+features. Further, we found that participants tended to faithfully
+retain trends and peaks and valleys when these features were
+present, while periodicity and noise were represented in more
+qualitative or gestural ways: semantically rather than accurately.
+These results suggest a need to consider more flexible and
+human-centric ways of presenting, summarizing, pre-processing,
+or clustering time series data.`,
+      bibtex: `@misc{proma2025visualstenographyfeaturerecreation,
+      title={Visual Stenography: Feature Recreation and Preservation in Sketches of Noisy Line Charts}, 
+      author={Rifat Ara Proma and Michael Correll and Ghulam Jilani Quadri and Paul Rosen},
+      year={2025},
+      eprint={2510.11927},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2510.11927}, 
+}`,
     },
   },
   {
@@ -130,8 +167,38 @@ report alone.`,
       "Evaluating Line Chart Strategies for Mitigating Density of Temporal Data: The Impact on Trend, Prediction and Decision-Making",
     authors: "Rifta Ara Proma; Ghulam Jilani Quadri; Paul Rosen",
     venue: "20th International Symposium on Visual Computing 2025",
-    links: [{ label: "PDF", href: "" }],
-    image: { src: "/publications/discrepancies.png", alt: "Distortion Image" },
+    links: [{ label: "PDF", href: "https://arxiv.org/abs/2510.11912" }],
+    image: {
+      src: "/publications/evaluating_line.png",
+      alt: "Distortion Image",
+    },
+    detail: {
+      hero: {
+        src: "/publications/evaluating_line.png",
+        alt: "Distortion Image",
+      },
+      pdf: "",
+      abstract: `Overplotted line charts can obscure trends in temporal data
+and hinder prediction. We conduct a user study comparing three al-
+ternatives—aggregated, trellis, and spiral line charts against standard
+line charts on tasks involving trend identification, making predictions,
+and decision-making. We found aggregated charts performed similarly to
+standard charts and support more accurate trend recognition and predic-
+tion; trellis and spiral charts generally lag. We also examined the impact
+on decision-making via a trust game. The results showed similar trust
+in standard and aggregated charts, varied trust in spiral charts, and a
+lean toward distrust in trellis charts. These findings provide guidance for
+practitioners choosing visualization strategies for dense temporal data.`,
+      bibtex: `@misc{proma2025evaluatinglinechartstrategies,
+      title={Evaluating Line Chart Strategies for Mitigating Density of Temporal Data: The Impact on Trend, Prediction, and Decision-Making}, 
+      author={Rifat Ara Proma and Ghulam Jilani Quadri and Paul Rosen},
+      year={2025},
+      eprint={2510.11912},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2510.11912}, 
+}`,
+    },
   },
   // 2025
   {
