@@ -13,6 +13,9 @@ export type VenueGroup = {
 };
 
 export const VENUE_GROUPS: VenueGroup[] = [
+  // =========================
+  // VIS
+  // =========================
   {
     category: "VIS",
     venues: [
@@ -36,6 +39,10 @@ export const VENUE_GROUPS: VenueGroup[] = [
       { key: "chi-vis", name: "ACM CHI", url: "https://chi.acm.org/" },
     ],
   },
+
+  // =========================
+  // HCI
+  // =========================
   {
     category: "HCI",
     venues: [
@@ -52,6 +59,10 @@ export const VENUE_GROUPS: VenueGroup[] = [
       { key: "dis", name: "ACM DIS", url: "https://dis.acm.org/" },
     ],
   },
+
+  // =========================
+  // Accessibility
+  // =========================
   {
     category: "Accessibility",
     venues: [
@@ -60,6 +71,79 @@ export const VENUE_GROUPS: VenueGroup[] = [
         key: "assets",
         name: "ACM ASSETS",
         url: "https://sigaccess.org/assets21/",
+      },
+    ],
+  },
+
+  // =========================
+  // NLP
+  // =========================
+  {
+    category: "NLP",
+    venues: [
+      {
+        key: "acl",
+        name: "ACL (Association for Computational Linguistics)",
+        url: "https://aclweb.org/",
+      },
+      {
+        key: "eacl",
+        name: "EACL (European Chapter of the ACL)",
+        url: "https://eacl.org/",
+      },
+      {
+        key: "aacl-ijcnlp",
+        name: "AACL/IJCNLP (Asia-Pacific Chapter / IJCNLP)",
+        url: "https://aaclweb.org/",
+      },
+      {
+        key: "emnlp",
+        name: "EMNLP (Empirical Methods in NLP)",
+        url: "https://www.emnlp.org/",
+      },
+      {
+        key: "coling",
+        name: "COLING (International Conference on Computational Linguistics)",
+        url: "https://coling.org/",
+      },
+      {
+        key: "conll",
+        name: "CoNLL (Conference on Computational Natural Language Learning)",
+        url: "https://www.conll.org/",
+      },
+      {
+        key: "lrec",
+        name: "LREC (Language Resources and Evaluation Conference)",
+        url: "https://lrec-conf.org/",
+      },
+    ],
+  },
+
+  // =========================
+  // AI / ML
+  // =========================
+  {
+    category: "AI / ML",
+    venues: [
+      {
+        key: "neurips",
+        name: "NeurIPS (Neural Information Processing Systems)",
+        url: "https://neurips.cc/",
+      },
+      {
+        key: "icml",
+        name: "ICML (International Conference on Machine Learning)",
+        url: "https://icml.cc/",
+      },
+      {
+        key: "iclr",
+        name: "ICLR (International Conference on Learning Representations)",
+        url: "https://iclr.cc/",
+      },
+      {
+        key: "aaai",
+        name: "AAAI (Association for the Advancement of Artificial Intelligence)",
+        url: "https://aaai.org/conference/",
       },
     ],
   },
@@ -133,5 +217,64 @@ export const DEADLINES: Record<
   assets: {
     abs: "2025-09-05T22:59:59-06:00",
     final: "2025-09-12T22:59:59-06:00",
+  },
+
+  // =========================
+  // NLP (ARR + commitment where applicable)
+  // =========================
+
+  acl: {
+    abs: "2026-01-05T23:59:59-06:00",
+    final: "2026-03-14T23:59:59-06:00",
+  },
+
+  eacl: {
+    abs: "2025-10-06T23:59:59-06:00",
+    final: "2025-12-14T23:59:59-06:00",
+  },
+
+  "aacl-ijcnlp": { abs: null, final: null },
+
+  emnlp: {
+    abs: "2025-05-19T23:59:59-06:00",
+    final: "2025-08-01T23:59:59-06:00",
+  },
+
+  coling: {
+    abs: "2024-09-16T23:59:59-06:00",
+    final: "2024-10-20T23:59:59-06:00",
+  },
+
+  conll: {
+    abs: "2025-03-14T23:59:59-06:00",
+    final: "2025-03-14T23:59:59-06:00",
+  },
+
+  lrec: {
+    abs: null,
+    final: "2025-10-24T23:59:59-06:00",
+  },
+
+  // =========================
+  // AI / ML
+  // =========================
+  iclr: {
+    abs: "2025-09-19T23:59:59-06:00",
+    final: "2025-09-24T23:59:59-06:00",
+  },
+
+  icml: {
+    abs: "2026-01-24T23:59:59-06:00",
+    final: "2026-01-29T23:59:59-06:00",
+  },
+
+  neurips: {
+    abs: "2025-05-11T23:59:59-06:00",
+    final: "2025-05-15T23:59:59-06:00",
+  },
+
+  aaai: {
+    abs: "2025-07-26T23:59:59-06:00",
+    final: "2025-08-02T23:59:59-06:00",
   },
 };

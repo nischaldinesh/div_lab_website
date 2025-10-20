@@ -210,7 +210,12 @@ practitioners choosing visualization strategies for dense temporal data.`,
       "Hyeon Jeon, Micha  ̈el Aupetit, Soohyun Lee, Kwon Ko, Youngtaek Kim, Ghulam Jilani Quadri, and Jinwook Seo",
     venue: "IEEE Transactions on Visualization and Computer Graphics",
     image: { src: "/publications/distortion.png", alt: "Distortion Image" },
-    links: [{ label: "PDF", href: "" }],
+    links: [
+      {
+        label: "PDF",
+        href: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11184260",
+      },
+    ],
     detail: {
       hero: {
         src: "/publications/distortion.png",
@@ -308,7 +313,7 @@ and interpreting DR projections.`,
     venue:
       "To appear in IEEE Transactions on Visualization and Computer Graphics, 2025.",
     image: {
-      src: "/publications/publication_1.png",
+      src: "/publications/annotations.png",
       alt: "Annotation survey",
     },
     links: [

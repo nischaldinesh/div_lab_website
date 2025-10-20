@@ -235,13 +235,13 @@ export const COLLABORATORS: Collaborator[] = [
   {
     name: "Sejong University",
     org: "Sejong University",
-    img: "/lab_crew/sejong.png",
+    img: "/lab_crew/su.png",
     href: "http://sejong.ac.kr/",
   },
   {
     name: "Data Institute for Societal Challenges (DISC)",
     org: "University of Oklahoma",
-    img: "/lab_crew/disc.png",
+    img: "/lab_crew/ou.png",
     href: "https://www.ou.edu/disc",
   },
 ];
