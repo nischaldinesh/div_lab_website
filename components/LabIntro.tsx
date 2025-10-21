@@ -2,24 +2,23 @@ export default function LabIntro() {
   return (
     <section className="mt-2 rounded-lg bg-neutral-100 p-6">
       <p className="text-justify text-sm">
-        The <strong>Data Interaction and Visualization Lab</strong>, in short{" "}
-        <strong>DIV-Lab</strong> is an interdisciplinary research laboratory
-        located in the School of Computer Science at the University of Oklahoma,
-        Norman. We specialize in Data Visualization, Perception and Cognition
-        Science, Computer Graphics, and applied Artificial Intelligence. Our
-        primary focus is on creating visual representations and interfaces that
-        enhance understanding, interaction, and development of computational
-        models. The DIV-Lab explores the intersection of data science, visual
-        cognition, and computer graphics in order to understand how people make
-        sense of visual information, and then leverage that knowledge to design
-        innovative visualization systems that drive discovery across a wide
-        range of domains, from psychology to communication to topology. Our
-        ultimate mission is to facilitate the dialog between people and
-        technologies, enabling discovery and advancing the state of the art in
-        visual design and data interpretation. Through close collaboration with
-        scholars and researchers, we strive to create interfaces and tools that
-        empower users to explore, analyze, and gain valuable insights from
-        complex data.
+        The Data Interaction and Visualization Lab, in short DIV-Lab is an
+        interdisciplinary research laboratory located in the School of Computer
+        Science at the University of Oklahoma, Norman. We specialize in Data
+        Visualization, Perception and Cognition Science, Computer Graphics, and
+        applied Artificial Intelligence. Our primary focus is on creating visual
+        representations and interfaces that enhance understanding, interaction,
+        and development of computational models. The DIV-Lab explores the
+        intersection of data science, visual cognition, and computer graphics in
+        order to understand how people make sense of visual information, and
+        then leverage that knowledge to design innovative visualization systems
+        that drive discovery across a wide range of domains, from psychology to
+        communication to topology. Our ultimate mission is to facilitate the
+        dialog between people and technologies, enabling discovery and advancing
+        the state of the art in visual design and data interpretation. Through
+        close collaboration with scholars and researchers, we strive to create
+        interfaces and tools that empower users to explore, analyze, and gain
+        valuable insights from complex data.
       </p>
 
       <p className="mt-4">Our research focus is on:</p>

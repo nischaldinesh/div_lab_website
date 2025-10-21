@@ -69,7 +69,10 @@ export default function News() {
         News and Updates
       </h2>
 
-      <div className="grid grid-cols-[120px_1fr] gap-4" onClick={handleClick}>
+      <div
+        className="grid grid-cols-[max-content_1fr] items-baseline gap-x-4 gap-y-2"
+        onClick={handleClick}
+      >
         {latest.map((n, i) => {
           const contentHTML = buildContentHTML(
             n.content,
