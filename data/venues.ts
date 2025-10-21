@@ -91,16 +91,16 @@ export const VENUE_GROUPS: VenueGroup[] = [
         name: "EACL (European Chapter of the ACL)",
         url: "https://eacl.org/",
       },
-      {
-        key: "aacl-ijcnlp",
-        name: "AACL/IJCNLP (Asia-Pacific Chapter / IJCNLP)",
-        url: "https://aaclweb.org/",
-      },
-      {
-        key: "emnlp",
-        name: "EMNLP (Empirical Methods in NLP)",
-        url: "https://www.emnlp.org/",
-      },
+      // {
+      //   key: "aacl-ijcnlp",
+      //   name: "AACL/IJCNLP (Asia-Pacific Chapter / IJCNLP)",
+      //   url: "https://aaclweb.org/",
+      // },
+      // {
+      //   key: "emnlp",
+      //   name: "EMNLP (Empirical Methods in NLP)",
+      //   url: "https://www.emnlp.org/",
+      // },
       {
         key: "coling",
         name: "COLING (International Conference on Computational Linguistics)",

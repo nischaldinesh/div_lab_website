@@ -8,7 +8,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "Quantifying and Modeling Perceptual Variability",
-    description: `How do we perceive complex visual information? Is this perception consistent across individuals? What factors shape these differences, and can we quantify them? To address the limitations of human visual perception in data visualization, computational metrics and models offer a path forward. By objectively measuring variability in interpretation (e.g., through cluster separability or other perceptual characteristics), researchers can systematically optimize visualizations for reliability and efficiency. This involves three steps: (1) defining perceptual quality metrics, (2) building computational proxies that mimic human perception, and (3) validating these models against empirical observations. The result is a framework that turns subjective visual experiences into measurable insights, improving the rigor of data visualization design.`,
+    description: `How do we perceive complex visual information? Is this perception consistent across individuals? What factors shape these differences, and can we quantify them? To address the limitations of human visual perception in data visualization, computational metrics and models offer a path forward. By objectively measuring variability in interpretation (e.g., through cluster separability or other perceptual characteristics), researchers can systematically optimize visualizations for reliability and efficiency.`,
     images: [{ src: "/projects/project_3.png", alt: "Perceptual Variability" }],
     papers: [
       {
@@ -46,9 +46,7 @@ export const projects: Project[] = [
   {
     title: "Design Optimization & Interactive Data Exploration",
     description: `Our research focuses on optimizing visualization design to enhance user performance on specific analytical tasks, particularly for clustering and pattern identification across various visualization types. We develop frameworks for creating visualizations that are optimized for both tasks and design constraints, moving beyond one-size-fits-all approaches. Our work includes automatic optimization algorithms that determine ideal visualization configurations for identifying patterns in multivariate datasets, spanning from scatterplots to network diagrams, heatmaps, and other complex visual representations. These frameworks help balance competing design goals while providing interactive exploration capabilities that adapt to different analytical needs. By systematically approaching design optimization across the visualization spectrum, we enable more effective data communication and improve user performance in complex analytical scenarios.`,
-    images: [
-      { src: "/projects/project_2_a.png", alt: "Vis Design Optimization" },
-    ],
+    images: [{ src: "/projects/cga.png", alt: "Vis Design Optimization" }],
     papers: [
       {
         title:

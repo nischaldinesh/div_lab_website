@@ -41,7 +41,10 @@ const PublicationsPage: React.FC = () => {
       <section className="mb-6">
         <p className="text-neutral-800 leading-relaxed">
           {publicationsIntro.description} <br />
-          <strong>Keywords:</strong> {publicationsIntro.keywords.join(", ")}
+          <Link href="/venues" className="underline text-blue-500">
+            List of venues (conferences & venues), where we submit our works
+          </Link>
+          {/* <strong>Keywords:</strong> {publicationsIntro.keywords.join(", ")} */}
         </p>
       </section>
 

@@ -4,23 +4,24 @@ import Link from "next/link";
 import { publications } from "@/data/publications";
 import BibtexBox from "@/components/BibtexBox";
 
-type Props = { params: { slug: string } };
-
+// IMPORTANT: do not import or reference PageProps anywhere
 export function generateStaticParams() {
   return publications.map((p) => ({ slug: p.slug }));
 }
 
-export default function PublicationDetailPage({ params }: Props) {
+export default function Page(
+  { params }: { params: { slug: string } } // <-- inline type avoids any custom PageProps
+) {
   const pub = publications.find((p) => p.slug === params.slug);
-  if (!pub) return notFound();
+  if (!pub) notFound();
 
   const hero = pub.detail?.hero ?? pub.image;
   const pdfPrimary =
-    pub.detail?.pdf ||
+    pub.detail?.pdf ??
     pub.links.find((l) => ["PDF", "Preprint"].includes(l.label))?.href;
 
   return (
-    <main className="main-content mx-4 md:mx-8 my-6  px-5 md:px-10 py-8 shadow-sm">
+    <main className="main-content mx-4 md:mx-8 my-6 px-5 md:px-10 py-8 shadow-sm">
       <section className="pub-detail">
         <div className="w-full mb-5 max-w-6xl mx-auto text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-start">
@@ -33,16 +34,18 @@ export default function PublicationDetailPage({ params }: Props) {
         </div>
 
         <div className="pub-content flex flex-col items-center gap-8">
-          <div className="w-full max-w-6xl mx-auto">
-            <Image
-              src={hero.src}
-              alt={hero.alt}
-              width={1200}
-              height={800}
-              className="teaser-image block mx-auto rounded-lg shadow-sm w-full h-auto max-w-5xl"
-              priority
-            />
-          </div>
+          {!!hero && (
+            <div className="w-full max-w-6xl mx-auto">
+              <Image
+                src={hero.src}
+                alt={hero.alt}
+                width={1200}
+                height={800}
+                className="teaser-image block mx-auto rounded-lg shadow-sm w-full h-auto max-w-5xl"
+                priority
+              />
+            </div>
+          )}
 
           {pub.detail?.abstract && (
             <div className="pub-abstract w-full max-w-6xl bg-gray-100 p-6 rounded-xl">

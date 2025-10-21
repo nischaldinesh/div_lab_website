@@ -42,16 +42,10 @@ export type Publication = {
 
 export const publicationsIntro = {
   description:
-    "We publish at Visualization, HCI, and Visual Computing journals and conferences, such as IEEE VIS, IEEE TVCG, ACM CHI, EuroVIS, and ACM ASSETS.",
+    "We publish our work at premier venues of Visualization and HCI, such as IEEE VIS, IEEE TVCG, ACM CHI, EuroVIS, and ACM ASSETS. DIV-Lab member publications prior to 2024 are available at Dr. Quadri Personal page.", //Add the link
   scholarHref:
     "https://scholar.google.com/citations?hl=en&tzom=300&user=jw9QYJcAAAAJ",
-  keywords: [
-    "Design Optimization",
-    "Visual Comprehension",
-    "Empirical Research",
-    "Perception",
-    "Perceptual Variability",
-  ],
+  keywords: [],
 };
 
 export const publications: Publication[] = [

@@ -31,7 +31,7 @@ export default function LabIntro() {
           </h3>
           <p className="mt-1 text-justify text-sm">
             At DIV-Lab, our research on constructing optimal{" "}
-            <strong>visualization design</strong> focuses on developing{" "}
+            visualization design focuses on developing{" "}
             <strong>visualization frameworks</strong> that align visual
             encoding, task demands, and design choices to enhance data
             interpretation and <strong>decision-making</strong>. We aim to
