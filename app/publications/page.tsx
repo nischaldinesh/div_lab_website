@@ -3,11 +3,34 @@
 import React, { useMemo, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  publications,
-  publicationsIntro,
-  Publication,
-} from "@/data/publications";
+import { publications, Publication } from "@/data/publications";
+import { SiGooglescholar } from "react-icons/si";
+
+function AuthorsLine({ authors }: { authors: Publication["authors"] }) {
+  return (
+    <>
+      {authors.map((a, i) => {
+        const sep =
+          i === authors.length - 1
+            ? ""
+            : i === authors.length - 2
+            ? " and "
+            : ", ";
+        const node = a.highlight ? (
+          <strong key={a.name}>{a.name}</strong>
+        ) : (
+          <span key={a.name}>{a.name}</span>
+        );
+        return (
+          <span key={`${a.name}-${i}`}>
+            {node}
+            {sep}
+          </span>
+        );
+      })}
+    </>
+  );
+}
 
 function usePublicationsByYear(data: Publication[]) {
   return useMemo(() => {
@@ -40,10 +63,27 @@ const PublicationsPage: React.FC = () => {
     <main className="main-content mx-4 md:mx-8  px-5 md:px-10 py-8">
       <section className="mb-6">
         <p className="text-neutral-800 leading-relaxed">
-          {publicationsIntro.description} <br />
-          <Link href="/venues" className="underline text-blue-500">
-            List of venues (conferences & venues), where we submit our works
+          We publish our work at premier venues of Visualization and HCI, such
+          as IEEE VIS, IEEE TVCG, ACM CHI, EuroVIS, and ACM ASSETS.
+          <Link
+            href="https://scholar.google.com/citations?hl=en&tzom=300&user=jw9QYJcAAAAJ"
+            aria-label="Google Scholar profile"
+          >
+            <SiGooglescholar className="inline ml-1 align-[-0.125em] text-blue-500" />
           </Link>
+          <br />
+          DIV-Lab member publications prior to 2024 are available at Dr. Quadri
+          Personal{" "}
+          <Link href="http://jiquadcs.com" className="underline text-blue-500">
+            page
+          </Link>
+          .<br />
+          List of venues (conferences & venues), where we submit our works{" "}
+          <Link href="/venues" className="underline text-blue-500">
+            {" "}
+            here
+          </Link>
+          .
           {/* <strong>Keywords:</strong> {publicationsIntro.keywords.join(", ")} */}
         </p>
       </section>
@@ -73,7 +113,8 @@ const PublicationsPage: React.FC = () => {
                   )}
 
                   <p className="publication-detail mt-2 text-sm text-neutral-700 text-justify">
-                    {pub.authors} {pub.venue}{" "}
+                    <AuthorsLine authors={pub.authors} />{" "}
+                    <span className="whitespace-pre-wrap">— {pub.venue}</span>{" "}
                     <Link
                       href={`/publications/${pub.slug}`}
                       className="font-semibold text-blue-600 hover:underline"

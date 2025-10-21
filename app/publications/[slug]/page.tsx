@@ -4,16 +4,47 @@ import Link from "next/link";
 import { publications } from "@/data/publications";
 import BibtexBox from "@/components/BibtexBox";
 
-// IMPORTANT: do not import or reference PageProps anywhere
+
+function AuthorsLine({
+  authors,
+}: {
+  authors: (typeof publications)[number]["authors"]; 
+}) {
+  return (
+    <>
+      {authors.map((a, i) => {
+        const sep =
+          i === authors.length - 1
+            ? ""
+            : i === authors.length - 2
+            ? " and "
+            : ", ";
+        const node = a.highlight ? (
+          <strong key={a.name}>{a.name}</strong>
+        ) : (
+          <span key={a.name}>{a.name}</span>
+        );
+        return (
+          <span key={`${a.name}-${i}`}>
+            {node}
+            {sep}
+          </span>
+        );
+      })}
+    </>
+  );
+}
+
+
 export function generateStaticParams() {
   return publications.map((p) => ({ slug: p.slug }));
 }
 
 export default function Page(
-  { params }: { params: { slug: string } } // <-- inline type avoids any custom PageProps
+  { params }: { params: { slug: string } } 
 ) {
   const pub = publications.find((p) => p.slug === params.slug);
-  if (!pub) notFound();
+  if (!pub) return notFound();
 
   const hero = pub.detail?.hero ?? pub.image;
   const pdfPrimary =
@@ -28,7 +59,9 @@ export default function Page(
             {pub.title}
           </h1>
           <div className="pub-meta mt-3 text-neutral-700 space-y-1">
-            <p className="authors text-start">{pub.authors}</p>
+            <p className="authors text-start">
+              <AuthorsLine authors={pub.authors} />
+            </p>
             <p className="venue text-start">{pub.venue}</p>
           </div>
         </div>

@@ -1,20 +1,4 @@
-//   {
-//     year: 2025,
-//     title:
-//       "Understanding Bias in Perceiving Dimensionality Reduction Projections",
-//     authors:
-//       "Seoyoung Doh, Hyeon Jeon, Sungbok Shin, Ghulam Jilani Quadri, Nam Wook Kim, and Jinwook Seo. ",
-//     venue:
-//       "VIS 2025 Workshop on Visualization for Communication (VisComm), 2025.",
-//     image: {
-//       src: "/publications/publications.png",
-//       alt: "Image",
-//     },
-//     links: [
-//       { label: "DOI", href: "https://arxiv.org/abs/2410.05579" },
-//       { label: "PDF", href: "https://arxiv.org/pdf/2410.05579" },
-//     ],
-//   },
+// publications.ts
 
 export type PublicationLink = {
   label: string;
@@ -28,24 +12,21 @@ export type PublicationDetail = {
   hero?: { src: string; alt: string };
 };
 
+export type Author = {
+  name: string;
+  highlight?: boolean; // set to true to render in <strong>
+};
+
 export type Publication = {
   slug: string;
   year: number;
   title: string;
-  authors: string;
+  authors: Author[]; // ← changed from string to structured list
   venue: string;
   image: { src: string; alt: string };
   links: PublicationLink[];
   highlight?: string;
   detail?: PublicationDetail;
-};
-
-export const publicationsIntro = {
-  description:
-    "We publish our work at premier venues of Visualization and HCI, such as IEEE VIS, IEEE TVCG, ACM CHI, EuroVIS, and ACM ASSETS. DIV-Lab member publications prior to 2024 are available at Dr. Quadri Personal page.", //Add the link
-  scholarHref:
-    "https://scholar.google.com/citations?hl=en&tzom=300&user=jw9QYJcAAAAJ",
-  keywords: [],
 };
 
 export const publications: Publication[] = [
@@ -54,15 +35,14 @@ export const publications: Publication[] = [
     year: 2025,
     title:
       "Visual Stenography: Feature Recreation and Preservation in Sketches of Noisy Line Charts",
-    authors:
-      "Rifat Ara Proma, Michael Correll, Ghulam Jilani Quadri, Paul Rosen",
-    venue: "IEEE TVCG",
-    links: [
-      {
-        label: "PDF",
-        href: "https://arxiv.org/abs/2510.11927",
-      },
+    authors: [
+      { name: "Rifat Ara Proma" },
+      { name: "Michael Correll" },
+      { name: "Ghulam Jilani Quadri", highlight: true },
+      { name: "Paul Rosen" },
     ],
+    venue: "IEEE TVCG",
+    links: [{ label: "PDF", href: "https://arxiv.org/abs/2510.11927" }],
     image: {
       src: "/publications/visual_stenography.png",
       alt: "Visual Stenography Image",
@@ -110,8 +90,15 @@ or clustering time series data.`,
     year: 2025,
     title:
       " Discrepancies in Mental Workload Estimation: Self-Reported versus EEG-Based Measures in Data Visualization Evaluation",
-    authors:
-      "Soobin Yim, Sangbong Yoo, Chanyoung Yoon, Chanyoung Jung, Chansoo Kim, Yun Jang, Ghulam Jilani Quadri",
+    authors: [
+      { name: "Soobin Yim" },
+      { name: "Sangbong Yoo" },
+      { name: "Chanyoung Yoon" },
+      { name: "Chanyoung Jung" },
+      { name: "Chansoo Kim" },
+      { name: "Yun Jang" },
+      { name: "Ghulam Jilani Quadri", highlight: true },
+    ],
     venue: "Preprint",
     links: [{ label: "PDF", href: "https://arxiv.org/pdf/2507.09262" }],
     image: { src: "/publications/discrepancies.png", alt: "Distortion Image" },
@@ -159,7 +146,11 @@ report alone.`,
     year: 2025,
     title:
       "Evaluating Line Chart Strategies for Mitigating Density of Temporal Data: The Impact on Trend, Prediction and Decision-Making",
-    authors: "Rifta Ara Proma; Ghulam Jilani Quadri; Paul Rosen",
+    authors: [
+      { name: "Rifta Ara Proma" },
+      { name: "Ghulam Jilani Quadri", highlight: true },
+      { name: "Paul Rosen" },
+    ],
     venue: "20th International Symposium on Visual Computing 2025",
     links: [{ label: "PDF", href: "https://arxiv.org/abs/2510.11912" }],
     image: {
@@ -200,8 +191,15 @@ practitioners choosing visualization strategies for dense temporal data.`,
     year: 2025,
     title:
       "Distortion-aware Brushing for Reliable Cluster Analysis in Multidimensional Projections",
-    authors:
-      "Hyeon Jeon, Micha  ̈el Aupetit, Soohyun Lee, Kwon Ko, Youngtaek Kim, Ghulam Jilani Quadri, and Jinwook Seo",
+    authors: [
+      { name: "Hyeon Jeon" },
+      { name: "Micha  ̈el Aupetit" },
+      { name: "Soohyun Lee" },
+      { name: "Kwon Ko" },
+      { name: "Youngtaek Kim" },
+      { name: "Ghulam Jilani Quadri", highlight: true },
+      { name: "Jinwook Seo" },
+    ],
     venue: "IEEE Transactions on Visualization and Computer Graphics",
     image: { src: "/publications/distortion.png", alt: "Distortion Image" },
     links: [
@@ -240,8 +238,14 @@ of geospatial data and (2) interactively labeling MD clusters`,
     year: 2025,
     title:
       "Understanding Bias in Perceiving Dimensionality Reduction Projections",
-    authors:
-      "Seoyoung Doh, Hyeon Jeon, Sungbok Shin, Ghulam Jilani Quadri, Nam Wook Kim, and Jinwook Seo.",
+    authors: [
+      { name: "Seoyoung Doh" },
+      { name: "Hyeon Jeon" },
+      { name: "Sungbok Shin" },
+      { name: "Ghulam Jilani Quadri", highlight: true },
+      { name: "Nam Wook Kim" },
+      { name: "Jinwook Seo" },
+    ],
     venue:
       "VIS 2025 Workshop on Visualization for Communication (VisComm), 2025.",
     links: [{ label: "PDF", href: "https://arxiv.org/pdf/2507.20805" }],
@@ -273,18 +277,23 @@ and interpreting DR projections.`,
     year: 2025,
     title:
       "Characterizing Visualization Perception with Psychological Phenomena: Uncovering the Role of Subitizing in Data Visualization",
-    authors:
-      "Arran Zeyu Wang, Ghulam Jilani Quadri, Mengyuan Zhu, Chin Tseng, and Danielle Albers Szafir.",
+    authors: [
+      { name: "Arran Zeyu Wang" },
+      { name: "Ghulam Jilani Quadri", highlight: true },
+      { name: "Mengyuan Zhu" },
+      { name: "Chin Tseng" },
+      { name: "Danielle Albers Szafir" },
+    ],
     venue:
       "In Proceedings of IEEE VIS, 2025. To appear in IEEE Transactions on Visualization and Computer Graphics, 2025.",
-    image: { src: "/publications/publication_0.png", alt: "Subitizing teaser" },
+    image: { src: "/publications/char.png", alt: "Subitizing teaser" },
     links: [
-      { label: "DOI", href: "https://arxiv.org/abs/2410.05579" },
-      { label: "PDF", href: "https://arxiv.org/pdf/2410.05579" },
+      { label: "DOI", href: "https://arxiv.org/abs/2508.17460" },
+      { label: "PDF", href: "https://arxiv.org/abs/2508.17460" },
     ],
     detail: {
       hero: {
-        src: "/publications/publication_0.png",
+        src: "/publications/char.png",
         alt: "Subitizing teaser",
       },
       pdf: "",
@@ -302,8 +311,12 @@ and interpreting DR projections.`,
     year: 2025,
     title:
       "A Survey on Annotations in Information Visualization: Empirical Insights, Applications, and Challenges",
-    authors:
-      "Md Dilshadur Rahman, Bhavana Doppalapudi, Ghulam Jilani Quadri, Paul Rosen.",
+    authors: [
+      { name: "Md Dilshadur Rahman" },
+      { name: "Bhavana Doppalapudi" },
+      { name: "Ghulam Jilani Quadri", highlight: true },
+      { name: "Paul Rosen" },
+    ],
     venue:
       "To appear in IEEE Transactions on Visualization and Computer Graphics, 2025.",
     image: {
@@ -336,8 +349,12 @@ and interpreting DR projections.`,
     year: 2024,
     title:
       "Shape It Up: An Empirically Grounded Approach for Designing Shape Palettes",
-    authors:
-      "Chin Tseng, Arran Zeyu Wang, Ghulam Jilani Quadri, and Danielle Albers Szafir.",
+    authors: [
+      { name: "Chin Tseng" },
+      { name: "Arran Zeyu Wang" },
+      { name: "Ghulam Jilani Quadri", highlight: true },
+      { name: "Danielle Albers Szafir" },
+    ],
     venue:
       "In Proceedings of IEEE VIS 2024; published in IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025.",
     image: { src: "/publications/shape.png", alt: "Shape It Up" },
@@ -371,8 +388,13 @@ and interpreting DR projections.`,
     year: 2024,
     title:
       "A Qualitative Analysis of Common Practices in Annotations: A Taxonomy and Design Space",
-    authors:
-      "Dilshad ur Rahman, Ghulam Jilani Quadri, Bhavana Doppalapudi, Danielle Albers Szafir, and Paul Rosen.",
+    authors: [
+      { name: "Dilshad ur Rahman" },
+      { name: "Ghulam Jilani Quadri", highlight: true },
+      { name: "Bhavana Doppalapudi" },
+      { name: "Danielle Albers Szafir" },
+      { name: "Paul Rosen" },
+    ],
     venue:
       "In Proceedings of IEEE VIS 2024; published in IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025.",
     image: {
@@ -414,8 +436,13 @@ and interpreting DR projections.`,
     year: 2024,
     title:
       "Striking the Right Balance: Systematic Assessment of Evaluation Method Distribution Across Contribution Types",
-    authors:
-      "Feng Lin, Arran Zeyu Wang, Dilshad ur Rahman, Danielle Albers Szafir, and Ghulam Jilani Quadri.",
+    authors: [
+      { name: "Feng Lin" },
+      { name: "Arran Zeyu Wang" },
+      { name: "Dilshad ur Rahman" },
+      { name: "Danielle Albers Szafir" },
+      { name: "Ghulam Jilani Quadri", highlight: true },
+    ],
     venue: "In Proceedings of BELIV Workshop at IEEE VIS 2024.",
     image: {
       src: "/publications/publication_3.png",
@@ -456,8 +483,15 @@ and interpreting DR projections.`,
     year: 2024,
     title:
       "Our Stories, Our Data: Co-designing Visualizations with People with Intellectual and Developmental Disabilities",
-    authors:
-      "Keke Wu, Ghulam Jilani Quadri, Arran Zeyu Wang, David Kwame Osei-Tutu, Emma Peterson, Varsha Koushik, and Danielle Albers Szafir.",
+    authors: [
+      { name: "Keke Wu" },
+      { name: "Ghulam Jilani Quadri", highlight: true },
+      { name: "Arran Zeyu Wang" },
+      { name: "David Kwame Osei-Tutu" },
+      { name: "Emma Peterson" },
+      { name: "Varsha Koushik" },
+      { name: "Danielle Albers Szafir" },
+    ],
     venue:
       "In the Proceedings of ACM SIGACCESS Conference on Computers and Accessibility, 2024.",
     image: {
@@ -497,8 +531,12 @@ and interpreting DR projections.`,
     year: 2024,
     title:
       "Exploring Annotation Taxonomy in Grouped Bar Charts: A Qualitative Classroom Study",
-    authors:
-      "Dilshad ur Rahman, Ghulam Jilani Quadri, Danielle Albers Szafir, and Paul Rosen.",
+    authors: [
+      { name: "Dilshad ur Rahman" },
+      { name: "Ghulam Jilani Quadri", highlight: true },
+      { name: "Danielle Albers Szafir" },
+      { name: "Paul Rosen" },
+    ],
     venue: "Information Visualization, 2024.",
     image: {
       src: "/publications/publication_5.png",
@@ -519,7 +557,7 @@ and interpreting DR projections.`,
     year: 2024,
     title:
       "Toward Constructing Frameworks for Task- and Design-Optimized Visualizations",
-    authors: "Ghulam Jilani Quadri.",
+    authors: [{ name: "Ghulam Jilani Quadri", highlight: true }],
     venue: "IEEE Computer Graphics and Applications (CG&A), 2024.",
     image: {
       src: "/publications/publication_6.png",
@@ -553,8 +591,14 @@ and interpreting DR projections.`,
     year: 2024,
     title:
       "Do You See What I See? A Qualitative Study Eliciting High-Level Visualization Comprehension",
-    authors:
-      "Ghulam Jilani Quadri, Arran Zeyu Wang, Zhehao Wang, Jennifer Adorno, Paul Rosen, and Danielle Albers Szafir.",
+    authors: [
+      { name: "Ghulam Jilani Quadri", highlight: true },
+      { name: "Arran Zeyu Wang" },
+      { name: "Zhehao Wang" },
+      { name: "Jennifer Adorno" },
+      { name: "Paul Rosen" },
+      { name: "Danielle Albers Szafir" },
+    ],
     venue:
       "In Proceedings of ACM CHI 2024: ACM Conference on Human Factors in Computing Systems, 2024.",
     image: {
@@ -597,8 +641,12 @@ series = {CHI '24}
     year: 2024,
     title:
       "Revisiting Categorical Color Perception in Scatterplots: Sequential, Diverging, and Categorical Palettes",
-    authors:
-      "Chin Tseng, Arran Zeyu Wang, Ghulam Jilani Quadri, and Danielle Albers Szafir.",
+    authors: [
+      { name: "Chin Tseng" },
+      { name: "Arran Zeyu Wang" },
+      { name: "Ghulam Jilani Quadri", highlight: true },
+      { name: "Danielle Albers Szafir" },
+    ],
     venue:
       "In Proceedings of EG/VGTC European Conference on Visualization (EuroVis) 2024, Odense, Denmark.",
     image: {
@@ -639,8 +687,14 @@ DOI = {10.2312/evs.20241073}
     year: 2024,
     title:
       "CLAMS: Cluster Ambiguity Measure for Estimating Perceptual Variability in Visual Clustering",
-    authors:
-      "Hyeon Jeon*, Ghulam Jilani Quadri*, Hyunwook Lee, Paul Rosen, Danielle Albers Szafir, and Jinwook Seo",
+    authors: [
+      { name: "Hyeon Jeon*" },
+      { name: "Ghulam Jilani Quadri*", highlight: true },
+      { name: "Hyunwook Lee" },
+      { name: "Paul Rosen" },
+      { name: "Danielle Albers Szafir" },
+      { name: "Jinwook Seo" },
+    ],
     venue:
       "IEEE Transactions on Visualization & Computer Graphics (Proc. IEEE VIS 2023), 2024.",
     image: { src: "/projects/project_3.png", alt: "CLAMS" },

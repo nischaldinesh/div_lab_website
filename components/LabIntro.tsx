@@ -30,21 +30,18 @@ export default function LabIntro() {
             Constructing Optimal Visualization Design
           </h3>
           <p className="mt-1 text-justify text-sm">
-            At DIV-Lab, our research on constructing optimal{" "}
-            visualization design focuses on developing{" "}
-            <strong>visualization frameworks</strong> that align visual
-            encoding, task demands, and design choices to enhance data
-            interpretation and <strong>decision-making</strong>. We aim to
-            bridge the gap between abstract design guidelines and real-world
-            applications by creating{" "}
-            <strong>task-optimized visualizations</strong>—designs tailored to
-            support specific analytical goals with greater clarity and
-            efficiency. We build tools and frameworks that produce more precise,
-            less ambiguous data presentations by systematically studying the
-            interplay between visualization types, low-level tasks, and encoding
-            strategies. This leads to improved performance, greater decision
-            confidence, and more robust, scalable{" "}
-            <strong>visual analytics systems</strong>.
+            At DIV-Lab, our research on constructing optimal visualization
+            design focuses on developing visualization frameworks that align
+            visual encoding, task demands, and design choices to enhance data
+            interpretation and decision-making. We aim to bridge the gap between
+            abstract design guidelines and real-world applications by creating{" "}
+            task-optimized visualizations—designs tailored to support specific
+            analytical goals with greater clarity and efficiency. We build tools
+            and frameworks that produce more precise, less ambiguous data
+            presentations by systematically studying the interplay between
+            visualization types, low-level tasks, and encoding strategies. This
+            leads to improved performance, greater decision confidence, and more
+            robust, scalable visual analytics systems.
           </p>
         </li>
 
@@ -53,19 +50,16 @@ export default function LabIntro() {
             Perception, Cognition and Visualization
           </h3>
           <p className="mt-1 text-justify text-sm">
-            At DIV-Lab, our research focuses on the intersection of{" "}
-            <strong>perception</strong>, <strong>cognition</strong>, and{" "}
-            <strong>data visualization</strong>. We explore how people visually
-            interpret and mentally process complex data through{" "}
-            <strong>empirical studies</strong> and{" "}
-            <strong>cognitive modeling</strong>. We aim to design more
-            intuitive, scalable, and insight-driven visual representations by
-            understanding the perceptual and cognitive mechanisms behind
-            visualization comprehension. Our work combines{" "}
-            <strong>human-centered design</strong> with empirical research
-            findings to develop tools and systems that improve how
-            visualizations communicate information—ultimately enabling clearer
-            thinking and better <strong>decision-making</strong> across diverse
+            At DIV-Lab, our research focuses on the intersection of perception,
+            cognition, and data visualization. We explore how people visually
+            interpret and mentally process complex data through empirical
+            studies and cognitive modeling. We aim to design more intuitive,
+            scalable, and insight-driven visual representations by understanding
+            the perceptual and cognitive mechanisms behind visualization
+            comprehension. Our work combines human-centered design with
+            empirical research findings to develop tools and systems that
+            improve how visualizations communicate information—ultimately
+            enabling clearer thinking and better decision-making across diverse
             domains.
           </p>
         </li>
@@ -76,17 +70,15 @@ export default function LabIntro() {
           </h3>
           <p className="mt-1 text-justify text-sm">
             At DIV-Lab, our Human-Centered Computing and Interfaces research
-            focuses on enabling effective <strong>collaboration</strong> between
-            people and intelligent systems. We design{" "}
-            <strong>interactive visualizations</strong> that make complex
-            machine-learning models more <strong>transparent</strong>,
-            supporting joint <strong>human-AI analysis</strong> and
-            decision-making. Additionally, we explore how emerging
-            technologies—such as <strong>mobile</strong> and{" "}
-            <strong>mixed reality interfaces</strong>—can transform data
-            interaction by embedding visualizations into real-world contexts.
-            Through these innovations, we aim to create intuitive, immersive
-            systems that enhance human understanding, insight, and action.
+            focuses on enabling effective collaboration between people and
+            intelligent systems. We design interactive visualizations that make
+            complex machine-learning models more transparent, supporting joint{" "}
+            human-AI analysis and decision-making. Additionally, we explore how
+            emerging technologies—such as mobileand mixed reality interfaces—can
+            transform data interaction by embedding visualizations into
+            real-world contexts. Through these innovations, we aim to create
+            intuitive, immersive systems that enhance human understanding,
+            insight, and action.
           </p>
         </li>
       </ul>

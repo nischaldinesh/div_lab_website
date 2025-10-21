@@ -244,4 +244,16 @@ export const COLLABORATORS: Collaborator[] = [
     img: "/lab_crew/ou.png",
     href: "https://www.ou.edu/disc",
   },
+  {
+    name: "Construction Innovation and Analytics Lab",
+    org: "University of Oklahoma",
+    img: "/lab_crew/cinnalab.jpg",
+    href: "https://architecture.ou.edu/directory/asare/",
+  },
+  {
+    name: "OU Research For Human-Computer Interaction Design",
+    org: "University of Oklahoma",
+    img: "/lab_crew/ou.png",
+    href: "https://ourchid.org",
+  },
 ];
