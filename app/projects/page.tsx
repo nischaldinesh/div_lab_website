@@ -25,53 +25,63 @@ const ResearchPage = () => {
       {projects.map((proj, i) => (
         <section
           key={i}
-          className="mb-12 bg-white p-8 rounded-xl shadow-sm flex flex-col lg:flex-row gap-8 items-start lg:items-center"
+          className="mb-12 bg-white rounded-xl shadow-sm overflow-hidden"
         >
-          {/* LEFT — Text and Papers */}
-          <div className="flex-1">
-            <h3 className="text-2xl text-[#323232] font-semibold mb-4">
-              {proj.title}
-            </h3>
-
-            <p className="text-neutral-700 mb-6 leading-relaxed text-justify">
-              {proj.description}
-            </p>
-
-            {/* Related Papers */}
-            <div className="space-y-3">
-              <p className="font-semibold text-[#323232]">Related Papers:</p>
-
-              {proj.papers.map((paper, k) => (
-                <div key={k} className="text-sm text-neutral-700">
-                  <span className="inline">
-                    {paper.title}
-                    <Link
-                      href={paper.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Open PDF for ${paper.title}`}
-                      className="ml-2 inline-block align-middle text-[#841617] hover:text-[#a8201a] transition-colors"
-                    >
-                      <FaFilePdf className="text-base" />
-                    </Link>
-                  </span>
-                </div>
-              ))}
+          {/* Title with Full-Width Ribbon */}
+          <div className="relative mb-0">
+            <div className="bg-gradient-to-r from-[#841617] to-[#a8201a] py-4 px-8 shadow-md">
+              <h3 className="text-2xl text-white font-semibold">
+                {proj.title}
+              </h3>
             </div>
+            {/* Ribbon fold effect */}
+            <div className="absolute left-0 -bottom-2 w-0 h-0 border-l-[16px] border-l-transparent border-t-[16px] border-t-[#5a0f10]"></div>
           </div>
 
-          {/* RIGHT — Image */}
-          <div className="flex-shrink-0 w-full lg:w-[40%] flex items-center justify-center">
-            {proj.images[0] && (
-              <Image
-                src={proj.images[0].src}
-                alt={proj.images[0].alt}
-                width={800}
-                height={500}
-                className="block mx-auto rounded-lg cursor-pointer hover:opacity-90 transition object-cover w-full h-auto"
-                onClick={() => setModal(proj.images[0])}
-              />
-            )}
+          {/* Content Area - Text and Image */}
+          <div className="p-8 flex flex-col lg:flex-row gap-8 items-start">
+            {/* LEFT — Text and Papers */}
+            <div className="flex-1 min-w-0">
+              <p className="text-neutral-700 mb-6 leading-relaxed text-justify">
+                {proj.description}
+              </p>
+
+              {/* Related Papers - Stretched to full width */}
+              <div className="space-y-3">
+                <p className="font-semibold text-[#323232]">Related Papers:</p>
+
+                {proj.papers.map((paper, k) => (
+                  <div key={k} className="text-sm text-neutral-700">
+                    <span className="inline">
+                      {paper.title}
+                      <Link
+                        href={paper.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Open PDF for ${paper.title}`}
+                        className="ml-2 inline-block align-middle text-[#841617] hover:text-[#a8201a] transition-colors"
+                      >
+                        <FaFilePdf className="text-base" />
+                      </Link>
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* RIGHT — Image */}
+            <div className="flex-shrink-0 w-full lg:w-[40%] flex items-center justify-center">
+              {proj.images[0] && (
+                <Image
+                  src={proj.images[0].src}
+                  alt={proj.images[0].alt}
+                  width={800}
+                  height={500}
+                  className="block mx-auto rounded-lg cursor-pointer hover:opacity-90 transition object-cover w-full h-auto"
+                  onClick={() => setModal(proj.images[0])}
+                />
+              )}
+            </div>
           </div>
         </section>
       ))}

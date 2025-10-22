@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "DIV Lab - Research Laboratory",
-  description: "DIV Lab",
+  description:
+    "The Data Interaction and Visualization Lab, in short DIV-Lab is an interdisciplinary research laboratory located in the School of Computer Science at the University of Oklahoma, Norman. We specialize in Data Visualization, Perception and Cognition Science, Computer Graphics, and applied Artificial Intelligence. Our primary focus is on creating visual representations and interfaces that enhance understanding, interaction, and development of computational models.",
 };
 
 export default function RootLayout({

@@ -63,29 +63,31 @@ const PublicationsPage: React.FC = () => {
     <main className="main-content mx-4 md:mx-8  px-5 md:px-10 py-8">
       <section className="mb-6">
         <p className="text-neutral-800 leading-relaxed">
-          We publish our work at premier venues of Visualization and HCI, such
-          as IEEE VIS, IEEE TVCG, ACM CHI, EuroVIS, and ACM ASSETS.
           <Link
             href="https://scholar.google.com/citations?hl=en&tzom=300&user=jw9QYJcAAAAJ"
             aria-label="Google Scholar profile"
           >
-            <SiGooglescholar className="inline ml-1 align-[-0.125em] text-blue-500" />
-          </Link>
-          <br />
-          DIV-Lab member publications prior to 2024 are available at Dr. Quadri
-          Personal{" "}
-          <Link href="http://jiquadcs.com" className="underline text-blue-500">
+            <SiGooglescholar
+              size={30}
+              className="inline ml-1 align-[-0.125em] text-blue-500"
+            />
+          </Link>{" "}
+          We publish our work at premier venues of Visualization and HCI, such
+          as IEEE VIS, IEEE TVCG, ACM CHI, EuroVIS, and ACM ASSETS. DIV-Lab
+          member publications prior to 2024 are available at Dr. Quadri Personal{" "}
+          <Link href="http://jiquadcs.com" className="text-blue-500">
             page
           </Link>
-          .<br />
-          List of venues (conferences & venues), where we submit our works{" "}
-          <Link href="/venues" className="underline text-blue-500">
-            {" "}
-            here
-          </Link>
           .
-          {/* <strong>Keywords:</strong> {publicationsIntro.keywords.join(", ")} */}
         </p>
+
+        <div className="bg-slate-200 shadow-md italic flex mt-4 items-center justify-center px-2 py-1">
+          <span>List of</span>
+          <Link href="/venues" className="font-bold text-blue-500 mx-1">
+            venues
+          </Link>
+          <span>(conferences & journals) where we submit our works.</span>
+        </div>
       </section>
 
       {years.map(({ year, items }) => (
