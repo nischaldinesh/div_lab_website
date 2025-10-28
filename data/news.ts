@@ -9,6 +9,12 @@ export const newsData: NewsRecord[] = [
   {
     date: "10 - 2025",
     content:
+      "Best Paper Honorable Mention - 'Characterizing Visualization Perception with Psychological Phenomena: Uncovering the Role of Subitizing in Data Visualization'",
+    link: "https://ieeevis.org/year/2025/info/awards/best-paper-awards",
+  },
+  {
+    date: "10 - 2025",
+    content:
       'One paper - "Visual Stenography: Feature Recreation and Preservation in Sketches of Noisy Line Charts" accepted at IEEE TVCG 2025',
     link: "https://arxiv.org/abs/2510.11927",
   },

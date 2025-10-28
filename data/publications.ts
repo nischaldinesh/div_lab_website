@@ -14,14 +14,14 @@ export type PublicationDetail = {
 
 export type Author = {
   name: string;
-  highlight?: boolean; // set to true to render in <strong>
+  highlight?: boolean;
 };
 
 export type Publication = {
   slug: string;
   year: number;
   title: string;
-  authors: Author[]; // ← changed from string to structured list
+  authors: Author[];
   venue: string;
   image: { src: string; alt: string };
   links: PublicationLink[];
@@ -304,8 +304,8 @@ and interpreting DR projections.`,
   booktitle={IEEE VIS},
   year={2025}
 }`,
-      highlight: "Best Paper Honorable Mention (IEEE VIS 2025)",
     },
+    highlight: "Best Paper Honorable Mention (IEEE VIS 2025)",
   },
   {
     slug: "annotation-survey-2025",
