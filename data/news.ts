@@ -9,7 +9,7 @@ export const newsData: NewsRecord[] = [
   {
     date: "10 - 2025",
     content:
-      "Best Paper Honorable Mention - 'Characterizing Visualization Perception with Psychological Phenomena: Uncovering the Role of Subitizing in Data Visualization'",
+      'Best Paper Honorable Mention - "Characterizing Visualization Perception with Psychological Phenomena: Uncovering the Role of Subitizing in Data Visualization"',
     link: "https://ieeevis.org/year/2025/info/awards/best-paper-awards",
   },
   {
