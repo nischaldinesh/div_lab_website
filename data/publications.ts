@@ -304,6 +304,7 @@ and interpreting DR projections.`,
   booktitle={IEEE VIS},
   year={2025}
 }`,
+      highlight: "Best Paper Honorable Mention (IEEE VIS 2025)",
     },
   },
   {
