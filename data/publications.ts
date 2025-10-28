@@ -41,7 +41,7 @@ export const publications: Publication[] = [
       { name: "Ghulam Jilani Quadri", highlight: true },
       { name: "Paul Rosen" },
     ],
-    venue: "IEEE TVCG",
+    venue: "In Proceedings of IEEE TVCG",
     links: [{ label: "PDF", href: "https://arxiv.org/abs/2510.11927" }],
     image: {
       src: "/publications/visual_stenography.png",
@@ -200,7 +200,7 @@ practitioners choosing visualization strategies for dense temporal data.`,
       { name: "Ghulam Jilani Quadri", highlight: true },
       { name: "Jinwook Seo" },
     ],
-    venue: "IEEE Transactions on Visualization and Computer Graphics",
+    venue: "In Proceedings of IEEE TVCG",
     image: { src: "/publications/distortion.png", alt: "Distortion Image" },
     links: [
       {
@@ -356,8 +356,7 @@ and interpreting DR projections.`,
       { name: "Ghulam Jilani Quadri", highlight: true },
       { name: "Danielle Albers Szafir" },
     ],
-    venue:
-      "In Proceedings of IEEE VIS 2024; published in IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025.",
+    venue: "In Proceedings of IEEE VIS 2024; published in IEEE TVCG 2025.",
     image: { src: "/publications/shape.png", alt: "Shape It Up" },
     links: [
       {
@@ -396,8 +395,7 @@ and interpreting DR projections.`,
       { name: "Danielle Albers Szafir" },
       { name: "Paul Rosen" },
     ],
-    venue:
-      "In Proceedings of IEEE VIS 2024; published in IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025.",
+    venue: "In Proceedings of IEEE VIS 2024; published in IEEE TVCG 2025.",
     image: {
       src: "/publications/publication_2.png",
       alt: "Annotation design space",

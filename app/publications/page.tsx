@@ -116,7 +116,7 @@ const PublicationsPage: React.FC = () => {
 
                   <p className="publication-detail mt-2 text-sm text-neutral-700 text-justify">
                     <AuthorsLine authors={pub.authors} />{" "}
-                    <span className="whitespace-pre-wrap">— {pub.venue}</span>{" "}
+                    <span className="whitespace-pre-wrap">, {pub.venue}</span>{" "}
                     <Link
                       href={`/publications/${pub.slug}`}
                       className="font-semibold text-blue-600 hover:underline"
