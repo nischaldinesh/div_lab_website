@@ -41,7 +41,8 @@ export const publications: Publication[] = [
       { name: "Ghulam Jilani Quadri", highlight: true },
       { name: "Paul Rosen" },
     ],
-    venue: "In Proceedings of IEEE TVCG",
+    venue:
+      "(in press) To appear in IEEE Transactions on Visualization and Computer Graphics 2025.",
     links: [{ label: "PDF", href: "https://arxiv.org/abs/2510.11927" }],
     image: {
       src: "/publications/visual_stenography.png",
@@ -151,7 +152,8 @@ report alone.`,
       { name: "Ghulam Jilani Quadri", highlight: true },
       { name: "Paul Rosen" },
     ],
-    venue: "20th International Symposium on Visual Computing 2025",
+    venue:
+      "In Proceedings of 20th International Symposium on Visual Computing 2025",
     links: [{ label: "PDF", href: "https://arxiv.org/abs/2510.11912" }],
     image: {
       src: "/publications/evaluating_line.png",
@@ -200,7 +202,8 @@ practitioners choosing visualization strategies for dense temporal data.`,
       { name: "Ghulam Jilani Quadri", highlight: true },
       { name: "Jinwook Seo" },
     ],
-    venue: "In Proceedings of IEEE TVCG",
+    venue:
+      "(in press) To appear in IEEE Transactions on Visualization and Computer Graphics 2025.",
     image: { src: "/publications/distortion.png", alt: "Distortion Image" },
     links: [
       {
@@ -247,7 +250,7 @@ of geospatial data and (2) interactively labeling MD clusters`,
       { name: "Jinwook Seo" },
     ],
     venue:
-      "VIS 2025 Workshop on Visualization for Communication (VisComm), 2025.",
+      "In Proceedings of Workshop on Visualization for Communication (VisComm) at IEEE Transactions on Visualization and Computer Graphics 2025.",
     links: [{ label: "PDF", href: "https://arxiv.org/pdf/2507.20805" }],
     image: { src: "/publications/bias.png", alt: "Bias Image" },
     detail: {
@@ -285,7 +288,7 @@ and interpreting DR projections.`,
       { name: "Danielle Albers Szafir" },
     ],
     venue:
-      "In Proceedings of IEEE VIS, 2025. To appear in IEEE Transactions on Visualization and Computer Graphics, 2025.",
+      "In Proceedings of IEEE VIS 2025. To appear in IEEE Transactions on Visualization and Computer Graphics 2025.",
     image: { src: "/publications/char.png", alt: "Subitizing teaser" },
     links: [
       { label: "DOI", href: "https://arxiv.org/abs/2508.17460" },
@@ -319,7 +322,7 @@ and interpreting DR projections.`,
       { name: "Paul Rosen" },
     ],
     venue:
-      "To appear in IEEE Transactions on Visualization and Computer Graphics, 2025.",
+      "(in press) To appear in IEEE Transactions on Visualization and Computer Graphics 2025.",
     image: {
       src: "/publications/annotations.png",
       alt: "Annotation survey",
@@ -356,7 +359,8 @@ and interpreting DR projections.`,
       { name: "Ghulam Jilani Quadri", highlight: true },
       { name: "Danielle Albers Szafir" },
     ],
-    venue: "In Proceedings of IEEE VIS 2024; published in IEEE TVCG 2025.",
+    venue:
+      "In Proceedings of IEEE VIS 2024; published in IEEE Transactions on Visualization and Computer Graphics 2025.",
     image: { src: "/publications/shape.png", alt: "Shape It Up" },
     links: [
       {
@@ -395,7 +399,8 @@ and interpreting DR projections.`,
       { name: "Danielle Albers Szafir" },
       { name: "Paul Rosen" },
     ],
-    venue: "In Proceedings of IEEE VIS 2024; published in IEEE TVCG 2025.",
+    venue:
+      "In Proceedings of IEEE VIS 2024; published in IEEE Transactions on Visualization and Computer Graphics 2025.",
     image: {
       src: "/publications/publication_2.png",
       alt: "Annotation design space",
