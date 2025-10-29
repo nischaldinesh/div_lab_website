@@ -35,56 +35,67 @@ const ResearchPage = () => {
               </h3>
             </div>
             {/* Ribbon fold effect */}
-            <div className="absolute left-0 -bottom-2 w-0 h-0 border-l-[16px] border-l-transparent border-t-[16px] border-t-[#5a0f10]"></div>
+            <div className="absolute left-0 -bottom-2 w-0 h-0 border-l-[16px] border-l-transparent border-t-[16px] border-t-[#5a0f10]" />
           </div>
 
           {/* Content Area - Text and Image */}
           <div className="p-8 flex flex-col lg:flex-row gap-8 items-start">
-            {/* LEFT — Text and Papers */}
+            {/* LEFT — Text */}
             <div className="flex-1 min-w-0">
               <p className="text-neutral-700 mb-6 leading-relaxed text-justify">
                 {proj.description}
               </p>
-
-              {/* Related Papers - Stretched to full width */}
-              <div className="space-y-3">
-                <p className="font-semibold text-[#323232]">Related Papers:</p>
-
-                {proj.papers.map((paper, k) => (
-                  <div key={k} className="text-sm text-neutral-700">
-                    <span className="inline">
-                      {paper.title}
-                      <Link
-                        href={paper.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`Open PDF for ${paper.title}`}
-                        className="ml-2 inline-block align-middle text-[#841617] hover:text-[#a8201a] transition-colors"
-                      >
-                        <FaFilePdf className="text-base" />
-                      </Link>
-                    </span>
-                  </div>
-                ))}
-              </div>
             </div>
 
             {/* RIGHT — Image */}
             <div className="flex-shrink-0 w-full lg:w-[40%] flex items-center justify-center">
-              {proj.images[0] && (
+              {proj.images?.[0] && (
                 <Image
                   src={proj.images[0].src}
                   alt={proj.images[0].alt}
                   width={800}
                   height={500}
                   className="block mx-auto rounded-lg cursor-pointer hover:opacity-90 transition object-cover w-full h-auto"
-                  onClick={() => setModal(proj.images[0])}
+                  onClick={() => setModal(proj.images![0])}
                 />
               )}
             </div>
           </div>
+
+          {/* Related Papers — Full width BELOW the image/text row (no bullets) */}
+          {proj.papers?.length > 0 && (
+            <div className="px-8 pb-8">
+              <div className="border-t border-neutral-200 pt-6">
+                <h4 className="text-lg font-semibold text-neutral-900 mb-3">
+                  Related Papers
+                </h4>
+                <div className="space-y-2">
+                  {proj.papers.map((paper, k) => (
+                    <div key={k} className="text-sm text-neutral-800">
+                      <span>{paper.title}</span>
+                      {paper.href && (
+                        <Link
+                          href={paper.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`Open PDF for ${paper.title}`}
+                          className="ml-2 inline-flex items-center gap-1 align-middle text-[#841617] hover:text-[#a8201a] transition-colors"
+                        >
+                          <FaFilePdf className="text-base" />
+                          <span className="underline underline-offset-2">
+                            PDF
+                          </span>
+                        </Link>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
         </section>
       ))}
+
       {modal && (
         <div
           role="dialog"
