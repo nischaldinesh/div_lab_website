@@ -46,7 +46,7 @@ export const STUDENTS: Person[] = [
     subtitle: "Assistant Professor, OU",
     img: "/lab_crew/faculty.jpg",
     socials: [
-      { type: "web", href: "http://jiquadcs.com/index.html" },
+      { type: "web", href: "http://jiquadcs.com/" },
       {
         type: "scholar",
         href: "https://scholar.google.com/citations?hl=en&tzom=300&user=jw9QYJcAAAAJ",
