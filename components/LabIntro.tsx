@@ -73,7 +73,7 @@ export default function LabIntro() {
             intelligent systems. We design interactive visualizations that make
             complex machine-learning models more transparent, supporting joint{" "}
             human-AI analysis and decision-making. Additionally, we explore how
-            emerging technologies—such as mobileand mixed reality interfaces—can
+            emerging technologies—such as mobile and mixed reality interfaces—can
             transform data interaction by embedding visualizations into
             real-world contexts. Through these innovations, we aim to create
             intuitive, immersive systems that enhance human understanding,

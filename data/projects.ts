@@ -37,8 +37,8 @@ export const projects: Project[] = [
       },
       {
         title:
-          "Naeinian et. al, Exploring the Hierarchical Nature of Visual Comprehension Through the Lens of Individual Background, IEEE VIS 2024.",
-        href: "https://content-staging.ieeevis.org/year/2024/poster_v-vis-posters-1071.html",
+          "Jeon et. al, How Do LLMs See Charts? A Comparative Study on High-Level Visualization Comprehension in Humans and LLMss, EuroVis 2026.",
+        href: "https://arxiv.org/abs/2604.08959",
       },
     ],
   },

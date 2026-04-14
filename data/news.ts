@@ -7,9 +7,21 @@ export type NewsRecord = {
 
 export const newsData: NewsRecord[] = [
   {
+    date: "04 - 2026",
+    content:
+      'One paper - "How Do LLMs See Charts? A Comparative Study on High-Level Visualization Comprehension in Humans and LLMs" accepted at EuroVis 2026',
+    link: "https://arxiv.org/abs/2604.08959",
+  },
+    {
+    date: "04 - 2026",
+    content:
+      'Our paper - "Redundant is Not Redundant: Automating Efficient Categorical Palette Design Unifying Color & Shape Encodings with CatPAW" awarded "Best Paper Honorable Mention at ACM CHI 2026" ',
+    link: "https://arxiv.org/abs/2602.06792",
+  },
+  {
     date: "10 - 2025",
     content:
-      'Our paper Characterizing Visualization Perception with Psychological Phenomena: Uncovering the Role of Subitizing in Data Visualization awarded "Best Paper Honorable Mention at IEEE VIS 2025" ',
+      'Our paper - "Characterizing Visualization Perception with Psychological Phenomena: Uncovering the Role of Subitizing in Data Visualization" awarded "Best Paper Honorable Mention at IEEE VIS 2025" ',
     link: "https://ieeevis.org/year/2025/info/awards/best-paper-awards",
   },
   {

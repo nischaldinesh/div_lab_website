@@ -1,4 +1,15 @@
 export const artifacts = [
+    {
+    title: "Categorical Palette Automation Wizard - CatPAW",
+    links: [
+      {
+        href: "https://catpaw-categorical-palette.web.app/pair.html?group=all",
+        icon: "/artifacts/dashboard.png",
+        alt: "Interface Icon",
+      },
+    ],
+  },
+  
   {
     title: "TopoCluster",
     links: [

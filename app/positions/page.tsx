@@ -7,8 +7,8 @@ export default function PositionsPage() {
 
       <p className="mb-8  text-neutral-800">
         We recruit motivated students and researchers to join our group at
-        DIV-Lab, University of Oklahoma. Currently we have no funded positions
-        available for Spring 2026.
+        DIV-Lab, University of Oklahoma. <strong>Currently we have no funded positions
+        available for Fall 2026.</strong>
       </p>
 
       <div className="mb-8">
