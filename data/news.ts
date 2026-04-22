@@ -9,7 +9,7 @@ export const newsData: NewsRecord[] = [
   {
     date: "04 - 2026",
     content:
-      'Our lab student - "Jasmine Lim" awarded a Summer UReCA Fellowship',
+      'Our lab student - Jasmine Lim awarded a "Summer UReCA Fellowship"',
     link: "https://www.ou.edu/ureca/opportunities/ureca-summer-fellowship",
   },
   {
