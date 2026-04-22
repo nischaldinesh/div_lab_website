@@ -75,6 +75,45 @@ export const publications: Publication[] = [
 }`,
     },
   },
+  {
+    slug: "annotation-educator",
+    year: 2026,
+    title:
+      "Designing Annotations in Visualization: Considerations from Visualization Practitioners and Educators",
+    authors: [
+      { name: "MD Rahman" },
+      { name: "Devin Lange" },
+      { name: "Ghulam Jilani Quadri", highlight: true },
+      { name: "Paul Rosen" }, 
+    ],
+    venue:
+      "In Proceedings of EuroVis 2026: Eurographics Conference on Visualization.",
+    links: [{ label: "PDF", href: "https://arxiv.org/abs/2604.07691" }],
+    image: {
+      src: "/publications/annotation-educator.png",
+      alt: "Annotation Educator Image",
+    },
+    detail: {
+      hero: {
+        src: "/publications/annotation-educator.png",
+        alt: "Annotation Educator Image",
+      },
+      pdf: "https://arxiv.org/abs/2604.07691",
+      abstract: ` Annotation is a central mechanism in visualization design that enables people to communicate key insights. Prior research has provided essential accounts of the visual forms annotations take, but less attention has been paid to the decisions behind them. This paper examines how annotations are designed in practice and how educators reflect on those practices. We conducted a two-phase qualitative study: interviews with ten practitioners from diverse backgrounds revealed the heuristics they draw on when creating annotations, and interviews with seven visualization educators offered complementary perspectives situated within broader concerns of clarity, guidance, and viewer agency. These studies provide a systematic account of annotation design knowledge in professional settings, highlighting the considerations, trade-offs, and contextual judgments that shape the use of annotations. By making this tacit expertise explicit, our work complements prior form-focused studies, strengthens understanding of annotation as a design activity, and points to opportunities for improved tool and guideline support.`,
+      bibtex: `@misc{rahman2026designingannotationsvisualizationconsiderations,
+      title={Designing Annotations in Visualization: Considerations from Visualization Practitioners and Educators}, 
+      author={Md Dilshadur Rahman and Devin Lange and Ghulam Jilani Quadri and Paul Rosen},
+      year={2026},
+      eprint={2604.07691},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2604.07691}, 
+}, 
+}
+
+}`,
+    },
+  },
     {
     slug: "redundant-is-not-redundant",
     year: 2026,

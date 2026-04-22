@@ -9,6 +9,12 @@ export const newsData: NewsRecord[] = [
   {
     date: "04 - 2026",
     content:
+      'Our lab student - "Jasmine Lim" awarded a Summer UReCA Fellowship',
+    link: "https://www.ou.edu/ureca/opportunities/ureca-summer-fellowship",
+  },
+  {
+    date: "04 - 2026",
+    content:
       'One paper - "How Do LLMs See Charts? A Comparative Study on High-Level Visualization Comprehension in Humans and LLMs" accepted at EuroVis 2026',
     link: "https://arxiv.org/abs/2604.08959",
   },
