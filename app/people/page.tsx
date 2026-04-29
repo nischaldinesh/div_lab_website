@@ -150,12 +150,18 @@ function DirectorCard({ person }: { person: Person }) {
 
 function CollaboratorCard({ c }: { c: Collaborator }) {
   return (
-    <div className="flex items-center gap-4 rounded-lg bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-1 hover:shadow-md">
-      <div className="relative h-29 w-33">
-        <Image src={c.img} alt={`${c.name} Logo`} fill className="object-fit" />
+    <div className="flex items-center gap-3 rounded-md bg-white px-3 py-2 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-0.5 hover:shadow-md">
+      <div className="relative h-12 w-20 shrink-0 overflow-hidden">
+        <Image
+          src={c.img}
+          alt={`${c.name} Logo`}
+          fill
+          sizes="80px"
+          className="object-contain object-center"
+        />
       </div>
       <div className="flex-1">
-        <h3 className="text-base font-semibold text-black">
+        <h3 className="text-sm font-semibold leading-tight text-black">
           <a
             href={c.href}
             target="_blank"
@@ -165,7 +171,7 @@ function CollaboratorCard({ c }: { c: Collaborator }) {
             {c.name}
           </a>
         </h3>
-        <p className="text-sm text-black">{c.org}</p>
+        <p className="text-xs text-black/80">{c.org}</p>
       </div>
     </div>
   );
@@ -203,7 +209,7 @@ export default function PeoplePage() {
 
       <section className="rounded-lg bg-neutral-100 p-6">
         <h3 className="text-xl font-semibold text-black">Our Collaborators</h3>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+        <div className="mt-6 grid gap-3 sm:grid-cols-2">
           {COLLABORATORS.map((c) => (
             <CollaboratorCard key={c.name} c={c} />
           ))}

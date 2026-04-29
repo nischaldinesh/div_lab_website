@@ -75,6 +75,62 @@ export const publications: Publication[] = [
 }`,
     },
   },
+       {
+    slug: "human-mllm",
+    year: 2026,
+    title:
+      "Seeing graphs like humans: Benchmarking computational measures and MLLMs for similarity assessment",
+    authors: [
+      { name: "Seokweon Jung" },
+      { name: "Jeongmin Rhee" },
+      { name: "Seoyoung Doh" },
+      { name: "Hyeon Jeon"},
+      { name: "Ghulam Jilani Quadri", highlight: true },
+      { name: "Jinwook Seo" },
+      
+    ],
+    venue:
+      "Information Visualization, 2024.",
+    links: [{ label: "PDF", href: "https://journals.sagepub.com/doi/pdf/10.1177/14738716261434961" }],
+    image: {
+      src: "/publications/human-mllm.png",
+      alt: "Human MLLM Image",
+    },
+    detail: {
+      hero: {
+        src: "/publications/human-mllm.png",
+        alt: "Human MLLM Image",
+      },
+      pdf: "https://journals.sagepub.com/doi/pdf/10.1177/14738716261434961",
+      abstract: `Comparing graphs to identify similarities is a fundamental task in visual analytics of graph data. To support
+this, visual analytics systems frequently employ quantitative computational measures to provide automated
+guidance. However, it remains unclear how well these measures align with subjective human visual perception, thereby offering recommendations that conflict with analysts’ intuitive judgments, potentially leading to
+confusion rather than reducing cognitive load. Multimodal Large Language Models (MLLMs), capable of
+visually interpreting graphs and explaining their reasoning in natural language, have emerged as a potential
+alternative to address this challenge. This paper bridges the gap between human and machine assessment
+of graph similarity through 3 interconnected experiments using a dataset of 1881 node-link diagrams.
+Experiment 1 collects relative similarity judgments and rationales from 32 human participants, revealing consensus on graph similarity while prioritizing global shapes and edge densities over exact topological details.
+Experiment 2 benchmarks 16 computational measures against these human judgments, identifying Portrait
+divergence as the best-performing metric, though with only moderate alignment. Experiment 3 evaluates the
+potential of 3 state-of-the-art MLLMs (GPT-5, Gemini 2.5 Pro, Claude Sonnet 4.5) as perceptual proxies. The
+results demonstrate that MLLMs, particularly GPT-5, significantly outperform traditional measures in aligning with human graph similarity perception and provide interpretable rationales for their decisions, whereas
+Claude Sonnet 4.5 shows the best computational efficiency. Our findings suggest that MLLMs hold significant
+promise not only as effective, explainable proxies for human perception but also as intelligent guides that can
+uncover subtle nuances that might be overlooked by human analysts in visual analytics systems.`,
+      bibtex: `@article{doi:10.1177/14738716261434961,
+author = {Seokweon Jung and Jeongmin Rhee and Seoyoung Doh and Hyeon Jeon and Ghulam Jilani Quadri and Jinwook Seo},
+title ={Seeing graphs like humans: Benchmarking computational measures and MLLMs for similarity assessment},
+journal = {Information Visualization},
+volume = {0},
+number = {0},
+pages = {14738716261434961},
+year = {2026},
+doi = {10.1177/14738716261434961},
+url = {https://journals.sagepub.com/doi/pdf/10.1177/14738716261434961},
+}
+
+}`,    },
+  },
   {
     slug: "annotation-educator",
     year: 2026,
