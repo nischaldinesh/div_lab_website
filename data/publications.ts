@@ -381,6 +381,53 @@ practitioners choosing visualization strategies for dense temporal data.`,
     },
   },
   // 2025
+    {
+    slug: "visual-edugame",
+    year: 2025,
+    title:
+      "Animated Visual Encoding and Layer Blending for Identification of Educational Game Strategies",
+    authors: [
+      { name: "Braden Roper", highlight: true },
+      { name: "William Thompson" },
+      { name: "Chris Weaver" },
+
+    ],
+    venue:
+      "To appear in IEEE Transactions on Visualization and Computer Graphics 2025.",
+    image: { src: "/publications/edugame.png", alt: "Distortion Image" },
+    links: [
+      {
+        label: "PDF",
+        href: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11298798",
+      },
+    ],
+    detail: {
+      hero: {
+        src: "/publications/edugame.png",
+        alt: "Educational Game Image",
+      },
+      pdf: "",
+      abstract: `Game-Based Learning has proven to be an effective method for enhancing engagement with educational material. However, gaining a
+deeper understanding of player strategies remains challenging. Sequential game-state and action-based tracking tools often gather extensive data that can be difficult to interpret as long-term strategy.
+This data presents unique problems to visualization, as it can be
+fairly natural, noisy data but is constrained within synthetic, controlled environments, leading to issues such as overplotting which
+can make interpretation complicated. We propose an animated visual encoding tool that utilizes kinetic visualization to address these
+issues. This tool enables researchers to construct animated data narratives through the configuration of parameter interpolation curves
+and blending layers. Finally, we demonstrate the usefulness of the
+tool while addressing specific interests as outlined by a domain expert collaborator.`,
+      bibtex: `@INPROCEEDINGS{11298798,
+  author={Roper, Braden and Thompson, William and Weaver, Chris},
+  booktitle={2025 IEEE Visualization and Visual Analytics (VIS)}, 
+  title={Animated Visual Encoding and Layer Blending for Identification of Educational Game Strategies}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={316-320},
+  keywords={Interpolation;Visual analytics;Data visualization;Games;Encoding;Kinetic theory;Noise measurement;Kinetic visualization;kinetic queries;animated encoding;game-based learning},
+  doi={10.1109/VIS60296.2025.00069}}
+}`,
+    },
+  },
   {
     slug: "distortion-aware",
     year: 2025,
