@@ -7,6 +7,19 @@ export type NewsRecord = {
 
 export const newsData: NewsRecord[] = [
   {
+    date: "05- 2026",
+    content:
+      "Abstract accepted for lab student Tapendra Pandey to present at the VisxVision workshop at VSS.",
+  },
+  {
+    date: "05- 2026",
+    content: "Tapendra is presenting a conference poster at VSS.",
+  },
+  {
+    date: "05- 2026",
+    content: "Aaryani Chowdary Ambati, PhD Student, is joining DIV-Lab from Summer 2026.",
+  },
+  {
     date: "04 - 2026",
     content:
       'Our lab student - Jasmine Lim awarded a "Summer UReCA Fellowship"',
