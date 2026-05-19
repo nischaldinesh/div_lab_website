@@ -102,17 +102,17 @@ export const STUDENTS: Person[] = [
       "HCI",
     ],
   },
-  {
-    name: "Shane Elliott",
-    role: "Ph.D. Student",
-    subtitle: "Computer Science, OU",
-    img: "/lab_crew/Shane_Elliott.jpg",
-    socials: [
-      { type: "mail", href: "mailto:David.S.Elliott-1@ou.edu" },
-      { type: "linkedin", href: "https://www.linkedin.com/in/dse418/" },
-    ],
-    focus: ["Human AI Collaboration", "Visual Analytics", "Computer Vision"],
-  },
+  // {
+  //   name: "Shane Elliott",
+  //   role: "Ph.D. Student",
+  //   subtitle: "Computer Science, OU",
+  //   img: "/lab_crew/Shane_Elliott.jpg",
+  //   socials: [
+  //     { type: "mail", href: "mailto:David.S.Elliott-1@ou.edu" },
+  //     { type: "linkedin", href: "https://www.linkedin.com/in/dse418/" },
+  //   ],
+  //   focus: ["Human AI Collaboration", "Visual Analytics", "Computer Vision"],
+  // },
   // {
   //   name: "Nischal Dinesh",
   //   role: "MS Student",
