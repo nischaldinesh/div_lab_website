@@ -200,9 +200,20 @@ export default function PeoplePage() {
 
       <section>
         <h2 className="mb-4 text-2xl font-semibold text-black">Alumni</h2>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-12 gap-y-6 md:grid-cols-2">
           {ALUMNI.map((p) => (
-            <PersonCard key={p.name} person={p} showFocus={false} />
+            <div key={p.name} className="space-y-1">
+              <h3 className="font-medium text-black">{p.name}</h3>
+              <p className="text-sm text-black">
+                {p.role}
+                {p.subtitle && (
+                  <>
+                    <br />
+                    {p.subtitle}
+                  </>
+                )}
+              </p>
+            </div>
           ))}
         </div>
       </section>

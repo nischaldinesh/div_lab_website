@@ -9,11 +9,7 @@ export const newsData: NewsRecord[] = [
   {
     date: "05- 2026",
     content:
-      "Abstract accepted for lab student Tapendra Pandey to present at the VisxVision workshop at VSS.",
-  },
-  {
-    date: "05- 2026",
-    content: "Tapendra is presenting a conference poster at VSS.",
+      "Tapendra's abstracts were accepted for presentation at the VisxVision workshop and as a conference poster at the Vision Sciences Society Annual Meeting.",
   },
   {
     date: "05- 2026",

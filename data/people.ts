@@ -209,6 +209,20 @@ export const ALUMNI: Person[] = [
     img: "/lab_crew/Cale_headshot.jpg",
     socials: [{ type: "mail", href: "mailto:cbible@ou.edu" }],
   },
+    {
+    name: "Shane Elliott",
+    role: "PhD Student",
+    subtitle: "Computer Science, OU",
+    img: "/lab_crew/Shane_Elliott.jpg",
+    socials: [{ type: "mail", href: "mailto:shane.elliott@ou.edu" }],
+  },
+      {
+    name: "Nam Huynh",
+    role: "MS Student",
+    subtitle: "Computer Science, OU",
+    img: "/lab_crew/Nam_Huynh.jpg",
+    socials: [{ type: "mail", href: "mailto:nam.huynh@ou.edu" }],
+  },
 ];
 
 // -------------------- COLLABORATORS --------------------
