@@ -128,7 +128,7 @@ export const STUDENTS: Person[] = [
 
   {
     name: "Jasmine T. Lim",
-    role: "BS/MS Student",
+    role: "MS Student",
     subtitle: "Computer Science, OU",
     img: "/lab_crew/student_3.jpg",
     socials: [
@@ -139,7 +139,7 @@ export const STUDENTS: Person[] = [
   },
   {
     name: "Matthew Tran",
-    role: "BS/MS Student",
+    role: "MS Student",
     subtitle: "Computer Science, OU",
     img: "/lab_crew/matthew.jpg",
     socials: [
