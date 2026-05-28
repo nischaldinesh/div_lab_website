@@ -131,7 +131,7 @@ export const STUDENTS: Person[] = [
     subtitle: "Data Science and Analytics,OU",
     img: "/lab_crew/aaryani.png",
     socials: [
-      // { type: "web", href: "http://bradenroper.com/#about" },
+      { type: "linkedin", href: "https://www.linkedin.com/in/aaryani-a-9a26991ba/" },
       { type: "mail", href: "mailto:aaryani@ou.edu" },
     ],
     focus: [
