@@ -57,7 +57,7 @@ export const STUDENTS: Person[] = [
   },
   {
     name: "Tapendra Pandey",
-    role: "Ph.D. Student",
+    role: "PhD Student",
     subtitle: "Computer Science, OU",
     img: "/lab_crew/Student_1.jpg",
     socials: [
@@ -71,24 +71,24 @@ export const STUDENTS: Person[] = [
       "Human Centered AI",
     ],
   },
-  {
-    name: "Debra Hogue",
-    role: "Ph.D. Student",
-    subtitle: "Computer Science, OU",
-    img: "/lab_crew/Hogue_headshot.png",
-    socials: [
-      {
-        type: "linkedin",
-        href: "https://www.linkedin.com/in/debra-hogue-14653026/",
-      },
-      { type: "mail", href: "mailto:dhogue@ou.edu" },
-    ],
-    focus: ["Human AI Collaboration", "Visualizations", "Computer Vision"],
-  },
+  // {
+  //   name: "Debra Hogue",
+  //   role: "PhD Student",
+  //   subtitle: "Computer Science, OU",
+  //   img: "/lab_crew/Hogue_headshot.png",
+  //   socials: [
+  //     {
+  //       type: "linkedin",
+  //       href: "https://www.linkedin.com/in/debra-hogue-14653026/",
+  //     },
+  //     { type: "mail", href: "mailto:dhogue@ou.edu" },
+  //   ],
+  //   focus: ["Human AI Collaboration", "Visualizations", "Computer Vision"],
+  // },
 
   {
     name: "Braden Roper",
-    role: "Ph.D. Student",
+    role: "PhD Student",
     subtitle: "Computer Science, OU",
     img: "/lab_crew/braden.png",
     socials: [
@@ -104,7 +104,7 @@ export const STUDENTS: Person[] = [
   },
   // {
   //   name: "Shane Elliott",
-  //   role: "Ph.D. Student",
+  //   role: "PhD Student",
   //   subtitle: "Computer Science, OU",
   //   img: "/lab_crew/Shane_Elliott.jpg",
   //   socials: [
@@ -125,6 +125,21 @@ export const STUDENTS: Person[] = [
   //   ],
   //   focus: ["AI/ML in Visualization", "Design Framework"],
   // },
+  {
+    name: "Aaryani Chowdary Ambati",
+    role: "PhD Student",
+    subtitle: "Data Science and Analytics,OU",
+    img: "/lab_crew/aaryani.png",
+    socials: [
+      // { type: "web", href: "http://bradenroper.com/#about" },
+      { type: "mail", href: "mailto:aaryani@ou.edu" },
+    ],
+    focus: [
+      "HCI",
+      "Perception",
+      "Visualization Comprehension"
+    ],
+  },
 
   {
     name: "Jasmine T. Lim",
@@ -164,23 +179,30 @@ export const STUDENTS: Person[] = [
 // -------------------- ALUMNI --------------------
 
 export const ALUMNI: Person[] = [
-  {
-    name: "Oluwademilade O. Jooda",
-    role: "BS/MS Graduate",
-    subtitle: "Computer Science, OU — Now @ Goldman Sachs",
-    img: "/lab_crew/student_2.png",
+    {
+    name: "Debra Hogue",
+    role: "PhD",
+    subtitle: "Computer Science, OU",
+    img: "/lab_crew/Hogue_headshot.png",
     socials: [
       {
         type: "linkedin",
-        href: "https://www.linkedin.com/in/demilade-jooda-bb4113288/",
+        href: "https://www.linkedin.com/in/debra-hogue-14653026/",
       },
-      { type: "mail", href: "mailto:oluwademilade.o.jooda-1@ou.edu" },
+      { type: "mail", href: "mailto:dhogue@ou.edu" },
     ],
-    focus: ["Software Engineering", "Data Visualization (student projects)"],
+    focus: ["Human AI Collaboration", "Visualizations", "Computer Vision"],
+  },
+      {
+    name: "Shane Elliott",
+    role: "PhD Student",
+    subtitle: "Computer Science, OU",
+    img: "/lab_crew/Shane_Elliott.jpg",
+    socials: [{ type: "mail", href: "mailto:shane.elliott@ou.edu" }],
   },
   {
     name: "Dhanushwi Arava",
-    role: "MS Student",
+    role: "MS Graduate",
     subtitle: "Computer Science, OU",
     img: "/lab_crew/arava.png",
     socials: [
@@ -202,26 +224,33 @@ export const ALUMNI: Person[] = [
       { type: "mail", href: "mailto:nischal.dinesh-1@ou.edu" },
     ],
   },
+        {
+    name: "Nam Huynh",
+    role: "MS Student",
+    subtitle: "Computer Science, OU",
+    img: "/lab_crew/Nam_Huynh.jpg",
+    socials: [{ type: "mail", href: "mailto:nam.huynh@ou.edu" }],
+  },
+    {
+    name: "Oluwademilade O. Jooda",
+    role: "BS/MS Graduate",
+    subtitle: "Computer Science, OU — Now @ Goldman Sachs",
+    img: "/lab_crew/student_2.png",
+    socials: [
+      {
+        type: "linkedin",
+        href: "https://www.linkedin.com/in/demilade-jooda-bb4113288/",
+      },
+      { type: "mail", href: "mailto:oluwademilade.o.jooda-1@ou.edu" },
+    ],
+    focus: ["Software Engineering", "Data Visualization (student projects)"],
+  },
   {
     name: "Cale Bible",
     role: "BS Student",
     subtitle: "Computer Science, OU",
     img: "/lab_crew/Cale_headshot.jpg",
     socials: [{ type: "mail", href: "mailto:cbible@ou.edu" }],
-  },
-    {
-    name: "Shane Elliott",
-    role: "PhD Student",
-    subtitle: "Computer Science, OU",
-    img: "/lab_crew/Shane_Elliott.jpg",
-    socials: [{ type: "mail", href: "mailto:shane.elliott@ou.edu" }],
-  },
-      {
-    name: "Nam Huynh",
-    role: "MS Student",
-    subtitle: "Computer Science, OU",
-    img: "/lab_crew/Nam_Huynh.jpg",
-    socials: [{ type: "mail", href: "mailto:nam.huynh@ou.edu" }],
   },
 ];
 
