@@ -6,6 +6,11 @@ export type NewsRecord = {
 };
 
 export const newsData: NewsRecord[] = [
+   {
+    date: "06- 2026",
+    content:
+      "Debra successfully defended her Ph.D. Congratulations to Dr. Debra Hogue!",
+  },
   {
     date: "05- 2026",
     content:

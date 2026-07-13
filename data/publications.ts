@@ -50,7 +50,8 @@ export const publications: Publication[] = [
     ],
     venue:
       "In Proceedings of EuroVis 2026: Eurographics Conference on Visualization.",
-    links: [{ label: "PDF", href: "https://arxiv.org/abs/2604.08959" }],
+    links: [{ label: "DOI", href: "https://doi.org/10.1111/cgf.70450" },
+      { label: "PDF", href: "https://arxiv.org/pdf/2604.08959" }],
     image: {
       src: "/publications/hlcllm.png",
       alt: "HLCLLM Image",
@@ -69,6 +70,7 @@ export const publications: Publication[] = [
       eprint={2604.08959},
       archivePrefix={arXiv},
       primaryClass={cs.HC},
+      doi={10.1111/cgf.70450},
       url={https://arxiv.org/abs/2604.08959}, 
 }
 
@@ -91,7 +93,10 @@ export const publications: Publication[] = [
     ],
     venue:
       "Information Visualization, 2024.",
-    links: [{ label: "PDF", href: "https://journals.sagepub.com/doi/pdf/10.1177/14738716261434961" }],
+    links: [
+      { label: "DOI", href: "10.1177/14738716261434961" },
+      { label: "PDF", href: "https://journals.sagepub.com/doi/pdf/10.1177/14738716261434961" }
+    ],
     image: {
       src: "/publications/human-mllm.png",
       alt: "Human MLLM Image",
@@ -144,7 +149,8 @@ url = {https://journals.sagepub.com/doi/pdf/10.1177/14738716261434961},
     ],
     venue:
       "In Proceedings of EuroVis 2026: Eurographics Conference on Visualization.",
-    links: [{ label: "PDF", href: "https://arxiv.org/abs/2604.07691" }],
+    links: [ { label: "DOI", href: "https://doi.org/10.1111/cgf.70435" },
+      { label: "PDF", href: "https://arxiv.org/pdf/2604.07691" }],
     image: {
       src: "/publications/annotation-educator.png",
       alt: "Annotation Educator Image",
@@ -163,6 +169,7 @@ url = {https://journals.sagepub.com/doi/pdf/10.1177/14738716261434961},
       eprint={2604.07691},
       archivePrefix={arXiv},
       primaryClass={cs.HC},
+      doi={10.1111/cgf.70435},
       url={https://arxiv.org/abs/2604.07691}, 
 }, 
 }
@@ -183,7 +190,10 @@ url = {https://journals.sagepub.com/doi/pdf/10.1177/14738716261434961},
     ],
     venue:
       "In Proceedings of ACM CHI’ 2026: ACM Conference on Human Factors in Computing Systems.",
-    links: [{ label: "PDF", href: "https://arxiv.org/abs/2602.06792" }],
+    links: [
+      { label: "DOI", href: "https://doi.org/10.1145/3772318.3791244" },
+      { label: "PDF", href: "https://arxiv.org/abs/2602.06792" }
+    ],
     image: {
       src: "/publications/catpaw.png",
       alt: "CatPAW Image",
@@ -236,7 +246,10 @@ into a practical palette design tool.`,
     ],
     venue:
       "(in press) To appear in IEEE Transactions on Visualization and Computer Graphics 2025.",
-    links: [{ label: "PDF", href: "https://arxiv.org/abs/2510.11927" }],
+    links: [
+      { label: "DOI", href: "https://doi.org/10.1109/TVCG.2025.3626128" },
+      { label: "PDF", href: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11218815" }
+    ],
     image: {
       src: "/publications/visual_stenography.png",
       alt: "Visual Stenography Image",
@@ -276,6 +289,7 @@ or clustering time series data.`,
       archivePrefix={arXiv},
       primaryClass={cs.HC},
       url={https://arxiv.org/abs/2510.11927}, 
+      doi={10.1109/TVCG.2025.3626128},
 }`,
     },
   },
@@ -327,11 +341,14 @@ and self-reported MW measures across varying task difficulty
 levels. Additionally, the observed patterns suggest the presence
 of unconscious cognitive effort that may not be captured by self-
 report alone.`,
-      bibtex: `@inproceedings{wang2025characterizing,
-  title={Characterizing Visualization Perception with Psychological Phenomena: Uncovering the Role of Subitizing in Data Visualization},
-  author={Wang, Arran Zeyu and Quadri, Ghulam Jilani and Zhu, Mengyuan and Tseng, Chin and Szafir, Danielle Albers},
-  booktitle={IEEE VIS},
-  year={2025}
+      bibtex: `@misc{yim2025discrepanciesmentalworkloadestimation,
+      title={Discrepancies in Mental Workload Estimation: Self-Reported versus EEG-Based Measures in Data Visualization Evaluation},
+      author={Soobin Yim and Sangbong Yoo and Chanyoung Yoon and Chanyoung Jung and Chansoo Kim and Yun Jang and Ghulam Jilani Quadri},
+      year={2025},
+      eprint={2507.09262},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2507.09262}
 }`,
     },
   },
@@ -397,6 +414,10 @@ practitioners choosing visualization strategies for dense temporal data.`,
     image: { src: "/publications/edugame.png", alt: "Distortion Image" },
     links: [
       {
+        label: "DOI",
+        href: "https://doi.org/10.1109/VIS60296.2025.00069"
+      },
+      {
         label: "PDF",
         href: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11298798",
       },
@@ -447,6 +468,10 @@ tool while addressing specific interests as outlined by a domain expert collabor
     image: { src: "/publications/distortion.png", alt: "Distortion Image" },
     links: [
       {
+        label: "DOI",
+        href: "https://doi.org/10.1109/TVCG.2025.3615314"
+      },
+      {
         label: "PDF",
         href: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11184260",
       },
@@ -468,11 +493,16 @@ accurately, leading to more reliable cluster analysis. Our user studies with 24 
 significantly outperforms previous brushing techniques for MDPs in accurately separating clusters in the MD space and remains robust
 against distortions. We further demonstrate the effectiveness of our technique through two use cases: (1) conducting cluster analysis
 of geospatial data and (2) interactively labeling MD clusters`,
-      bibtex: `@inproceedings{wang2025characterizing,
-  title={Characterizing Visualization Perception with Psychological Phenomena: Uncovering the Role of Subitizing in Data Visualization},
-  author={Wang, Arran Zeyu and Quadri, Ghulam Jilani and Zhu, Mengyuan and Tseng, Chin and Szafir, Danielle Albers},
-  booktitle={IEEE VIS},
-  year={2025}
+      bibtex: `@ARTICLE{jeon2026distortionawarebrushingreliableclusteranalysis,
+  author={Jeon, Hyeon and Aupetit, Michaël and Lee, Soohyun and Ko, Kwon and Kim, Youngtaek and Quadri, Ghulam Jilani and Seo, Jinwook},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  title={Distortion-Aware Brushing for Reliable Cluster Analysis in Multidimensional Projections},
+  year={2026},
+  volume={32},
+  number={2},
+  pages={2165-2182},
+  keywords={Distortion;Brushes;Shape;Reliability;Layout;Data visualization;Visual analytics;Nonlinear distortion;Labeling;Data mining;Multidimensional projections (MDPs);distortion-aware brushing;brushing;distortions;visual clustering;cluster analysis},
+  doi={10.1109/TVCG.2025.3615314}
 }`,
     },
   },
@@ -507,11 +537,14 @@ the existence of such bias and (2) explains why the bias exists. Our
 study suggests that visual interestingness biases practitioners’ preferences when selecting projections for analysis, and this bias intensifies with color-encoded labels and shorter exposure time. Based
 on our findings, we discuss strategies to mitigate bias in perceiving
 and interpreting DR projections.`,
-      bibtex: `@inproceedings{wang2025characterizing,
-  title={Characterizing Visualization Perception with Psychological Phenomena: Uncovering the Role of Subitizing in Data Visualization},
-  author={Wang, Arran Zeyu and Quadri, Ghulam Jilani and Zhu, Mengyuan and Tseng, Chin and Szafir, Danielle Albers},
-  booktitle={IEEE VIS},
-  year={2025}
+      bibtex: `@misc{doh2025understandingbiasperceivingdimensionality,
+      title={Understanding Bias in Perceiving Dimensionality Reduction Projections},
+      author={Seoyoung Doh and Hyeon Jeon and Sungbok Shin and Ghulam Jilani Quadri and Nam Wook Kim and Jinwook Seo},
+      year={2025},
+      eprint={2507.20805},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2507.20805}
 }`,
     },
   },
@@ -531,7 +564,7 @@ and interpreting DR projections.`,
       "In Proceedings of IEEE VIS 2025. To appear in IEEE Transactions on Visualization and Computer Graphics 2025.",
     image: { src: "/publications/char.png", alt: "Subitizing teaser" },
     links: [
-      { label: "DOI", href: "https://arxiv.org/abs/2508.17460" },
+      { label: "DOI", href: "https://doi.org/10.1109/TVCG.2025.3634807" },
       { label: "PDF", href: "https://arxiv.org/abs/2508.17460" },
     ],
     detail: {
@@ -541,11 +574,16 @@ and interpreting DR projections.`,
       },
       pdf: "",
       abstract: `Understanding how people perceive visualizations is crucial for designing effective visual data representations; however, many heuristic design guidelines are derived from specific tasks or visualization types, without considering the constraints or conditions under which those guidelines hold. In this work, we aimed to assess existing design heuristics for categorical visualization using well-established psychological knowledge. Specifically, we examine the impact of the subitizing phenomenon in cognitive psychology—people’s ability to automatically recognize a small set of objects instantly without counting—in data visualizations. We conducted three experiments with multi-class scatterplots—between 2 and 15 classes with varying design choices—across three different tasks—class estimation, correlation comparison, and clustering judgments—to understand how performance changes as the number of classes (and therefore set size) increases. Our results indicate if the category number is smaller than six, people tend to perform well at all tasks, providing empirical evidence of subitizing in visualization. When category numbers increased, performance fell, with the magnitude of the performance change depending on task and encoding. Our study bridges the gap between heuristic guidelines and empirical evidence by applying well-established psychological theories, suggesting future opportunities for using psychological theories and constructs to characterize visualization perception.`,
-      bibtex: `@inproceedings{wang2025characterizing,
-  title={Characterizing Visualization Perception with Psychological Phenomena: Uncovering the Role of Subitizing in Data Visualization},
+      bibtex: `@ARTICLE{wang2026characterizingvisualizationperceptionpsychologicalphenomena,
   author={Wang, Arran Zeyu and Quadri, Ghulam Jilani and Zhu, Mengyuan and Tseng, Chin and Szafir, Danielle Albers},
-  booktitle={IEEE VIS},
-  year={2025}
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  title={Characterizing Visualization Perception with Psychological Phenomena: Uncovering the Role of Subitizing in Data Visualization},
+  year={2026},
+  volume={32},
+  number={1},
+  pages={1131-1141},
+  keywords={Data visualization;Image color analysis;Encoding;Shape;Psychology;Visualization;Accuracy;Guidelines;Design methodology;Estimation;Visualization Perception;Psychology;Subitizing;Fechner's Law;Dual-System Theory;Categorical Data;Color;Shape},
+  doi={10.1109/TVCG.2025.3634807}
 }`,
     },
     highlight: "Best Paper Honorable Mention (IEEE VIS 2025)",
